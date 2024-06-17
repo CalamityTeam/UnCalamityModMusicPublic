@@ -1,0 +1,9 @@
+Vanilla Calamity Mod Music is an in-progress music mod that aims to replace the entire vanilla soundtrack with new songs made in the context of the Calamity Mod OST.
+
+-= Credits =-
+
+Music: Heart Plus Up!, SkippyZii, Salvati, Thriplerex, CDMusic, psykomatic, & novaGnomes
+
+Sprites: Heart Plus Up!, LordMetarex, Seasalt, toothbrush, IbanPlay, Cooper, & PokerFace
+
+Programming: apotofkoolaid

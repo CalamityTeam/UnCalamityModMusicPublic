@@ -1,0 +1,445 @@
+Mods: {
+	UnCalamityModMusic: {
+		Configs: {
+			MusicConfig: {
+				DisplayName: Music Config
+				MusicTogglesHeader: Music Toggles
+				AlternateMusicHeader: Alternate Music
+				ConditionChangesHeader: Condition Changes
+
+				WorkshopThemes: {
+					Label: "[i:UnCalamityModMusic/WorkshopTier1MusicBox] Workshop Themes"
+					Tooltip:
+						'''
+						Enables the Workshop themes that play when near certain crafting stations.
+						If you're looking to disable the Town themes, use the separate No Town Music mod or use Shadow Candles.
+						'''
+				}
+
+				HardmodeInterlude: {
+					Label: "[i:UnCalamityModMusic/HardmodeInterludeMusicBox] Hardmode Interlude"
+					Tooltip:
+						'''
+						Enables a music event that plays when entering Hardmode.
+						If you're looking to disable the Credits, use the separate No In-game Credits mod.
+						'''
+				}
+
+				DeepAbyssAlt: {
+					Label: "[i:UnCalamityModMusic/AbyssLayer3AltMusicBox] Deep Abyss Alt"
+					Tooltip: Enables an alternate theme for the 3rd layer of the Abyss.
+				}
+
+				CrimsonAlt: {
+					Label: "[i:UnCalamityModMusic/CrimsonMusicBox] Crimson Alt"
+					Tooltip: Enables an alternate theme for the Crimson from the discontinued Terrawaves mod.
+				}
+
+				RainAlt: {
+					Label: "[i:UnCalamityModMusic/RainMusicBox] Rain Alt"
+					Tooltip: Enables an alternate theme for the Rain event from the discontinued Terrawaves mod.
+				}
+
+				BloodMoonAlt: {
+					Label: "[i:UnCalamityModMusic/BloodMoonMusicBox] Blood Moon Alt"
+					Tooltip: Enables an alternate theme for the Blood Moon event from the discontinued Terrawaves mod.
+				}
+
+				KingSlimeAlt: {
+					Label: "[i:UnCalamityModMusic/KingSlimeMusicBox] King Slime Alt"
+					Tooltip: Enables an alternate theme for King Slime from the discontinued Terrawaves mod.
+				}
+
+				EyeofCthulhuAlt: {
+					Label: "[i:UnCalamityModMusic/EyeofCthulhuMusicBox] Eye of Cthulhu Alt"
+					Tooltip: Enables an alternate theme for the Eye of Cthulhu from the discontinued Terrawaves mod.
+				}
+
+				DestroyerAlt: {
+					Label: "[i:DestroyerPetItem] Destroyer Alt"
+					Tooltip: Enables an alternate theme for the Destroyer from the discontinued Terrawaves mod.
+				}
+
+				PrioritizeInfernumMusic: {
+					Label: "[i:WallOfFleshGoatMountItem] Prioritize Infernum Music"
+					Tooltip:
+						'''
+						Enables Infernum music to take priority over VCMM music.
+						This option does nothing if the Infernum Mode Music mod is disabled.
+						This option does not affect Calamity bosses or any alternate themes.
+						'''
+				}
+
+				OverrideAnahitasLure: {
+					Label: "[i:UnCalamityModMusic/OceanDayMusicBox] Override Anahita's Lure"
+					Tooltip:
+						'''
+						Overrides the ??? theme with the Ocean themes.
+						This also applies to Ocean ambience.
+						'''
+				}
+			}
+
+			OtherConfig: {
+				DisplayName: Other Config
+				AmbienceTogglesHeader: Ambience Toggles
+				OtherChangesHeader: Other Changes
+
+				AmbienceFrequency: {
+					Label: "[i:Bunny] Ambience Frequency"
+					Tooltip:
+						'''
+						Adjusts the frequency at which ambience will replace normal music, from 0% to 100%.
+						If at 100%, all music except boss and event music will be disabled.
+						'''
+				}
+
+				DisableBeeHiveAmbience: {
+					Label: "[i:BeeWax] Disable Bee Hive Ambience"
+					Tooltip: Disables ambience in Bee Hives if ambience is enabled.
+				}
+
+				DisableSpiderCaveAmbience: {
+					Label: "[i:SpiderFang] Disable Spider Cave Ambience"
+					Tooltip: Disables ambience in Spider Caves if ambience is enabled.
+				}
+
+				MusicBoxResprite: {
+					Label: "[i:MusicBox] Empty Music Box Resprite"
+					Tooltip: Enables a resprite of the empty, unrecorded music box.
+				}
+			}
+		}
+
+		Items: {
+			AbyssLayer3AltMusicBox: {
+				DisplayName: Music Box (Abyss - Layer 3 Alt)
+				Tooltip: Plays 'R'lyehian Depths' by Heart Plus Up!
+			}
+
+			BloodMoonDeathMusicBox: {
+				DisplayName: Music Box (Blood Moon - Death)
+				Tooltip: Plays 'Sanguine Eclipse' by Thriplerex
+			}
+
+			BloodMoonMusicBox: {
+				DisplayName: Music Box (Blood Moon)
+				Tooltip: Plays 'Congealing Shadows' by Thriplerex
+				DisplayNameAlt: Music Box (Blood Moon Alt)
+				TooltipAlt: Plays 'Clotted Darkness' by CDMusic
+			}
+
+			BrainofCthulhuMusicBox: {
+				DisplayName: Music Box (Brain of Cthulhu)
+				Tooltip: Plays 'Madness Incarnate' by Heart Plus Up! and SkippyZii
+			}
+
+			CavernsMusicBox: {
+				DisplayName: Music Box (Caverns)
+				Tooltip: Plays 'Nearing the Inferno' by Heart Plus Up!
+			}
+
+			CorruptionMusicBox: {
+				DisplayName: Music Box (Corruption)
+				Tooltip: Plays 'Writhing Shadows' by Heart Plus Up!
+			}
+
+			CorruptionUndergroundMusicBox: {
+				DisplayName: Music Box (Underground Corruption)
+				Tooltip: Plays 'Between the Shadows' by Heart Plus Up!
+			}
+
+			CrimsonMusicBox: {
+				DisplayName: Music Box (Crimson)
+				Tooltip: Plays 'Clotted Lands' by SkippyZii
+				DisplayNameAlt: Music Box (Crimson Alt)
+				TooltipAlt: Plays 'Hemorrhage' by CDMusic
+			}
+
+			CrimsonUndergroundMusicBox: {
+				DisplayName: Music Box (Underground Crimson)
+				Tooltip: Plays 'Bloodstained Terror' by SkippyZii
+			}
+
+			DesertMusicBox: {
+				DisplayName: Music Box (Desert)
+				Tooltip: Plays 'Scorched to Dust' by Heart Plus Up!
+			}
+
+			DungeonMusicBox: {
+				DisplayName: Music Box (Dungeon)
+				Tooltip: Plays 'Chambers of the Tyrant' by Heart Plus Up!
+			}
+
+			EaterofWorldsMusicBox: {
+				DisplayName: Music Box (Eater of Worlds)
+				Tooltip: Plays 'Menace of the Chasms' by Heart Plus Up!
+			}
+
+			EyeofCthulhuMusicBox: {
+				DisplayName: Music Box (Eye of Cthulhu)
+				Tooltip: Plays 'Bloodshot Barrage' by Heart Plus Up! and novaGnomes
+				DisplayNameAlt: Music Box (Eye of Cthulhu Alt)
+				TooltipAlt: Plays 'Through Evil's Eye' by CDMusic
+			}
+
+			FalseEpilogueMusicBox: {
+				DisplayName: Music Box (False Epilogue)
+				Tooltip: Plays 'The Memory of a Cruel World' by Heart Plus Up!
+			}
+
+			ForestDayAfternoonMusicBox: {
+				DisplayName: Music Box (Forest Day - Afternoon)
+				Tooltip: Plays 'A Legend's Strife (Lament)' by Heart Plus Up!
+			}
+
+			ForestDayDawnMusicBox: {
+				DisplayName: Music Box (Forest Day - Dawn)
+				Tooltip: Plays 'A Legend's Strife (Acceptance)' by Heart Plus Up!
+			}
+
+			ForestDayEveningMusicBox: {
+				DisplayName: Music Box (Forest Day - Evening)
+				Tooltip: Plays 'A Legend's Strife (Grief)' by Heart Plus Up!
+			}
+
+			ForestDayMorningMusicBox: {
+				DisplayName: Music Box (Forest Day - Morning)
+				Tooltip: Plays 'A Legend's Strife (Epiphany)' by Heart Plus Up!
+			}
+
+			ForestNightMusicBox: {
+				DisplayName: Music Box (Forest Night)
+				Tooltip: Plays 'Laze of the Sky' by Heart Plus Up!
+			}
+
+			GeodesMusicBox: {
+				DisplayName: Music Box (Geodes)
+				Tooltip: Plays 'Amidst the Minerals' by Heart Plus Up!
+			}
+
+			GlowingMushroomFieldsMusicBox: {
+				DisplayName: Music Box (Glowing Mushroom Fields)
+				Tooltip: Plays 'Psychedelic Depths' by Heart Plus Up!
+			}
+
+			HardmodeInterludeMusicBox: {
+				DisplayName: Music Box (Hardmode Interlude)
+				Tooltip: Plays 'The Resurrection of a Cruel World' by Salvati
+			}
+
+			KingSlimeMusicBox: {
+				DisplayName: Music Box (King Slime)
+				Tooltip: Plays 'Gelatinous Monarch' by Heart Plus Up!
+				DisplayNameAlt: Music Box (King Slime Alt)
+				TooltipAlt: Plays 'Battle of the Bouncy' by CDMusic
+			}
+
+			LanternFestivalMusicBox: {
+				DisplayName: Music Box (Lantern Festival)
+				Tooltip: Plays 'Serenity' by Heart Plus Up!
+			}
+
+			MeteoriteMusicBox: {
+				DisplayName: Music Box (Meteorite)
+				Tooltip: Plays 'The Abomination's Omen' by Heart Plus Up!
+			}
+
+			MoonLordMusicBox: {
+				DisplayName: Music Box (Moon Lord)
+				Tooltip:
+					'''
+					Plays 'Virtuous Radiance' by psykomatic
+					This music box contains a placeholder song
+					'''
+			}
+
+			OceanDayMusicBox: {
+				DisplayName: Music Box (Ocean Day)
+				Tooltip: Plays 'shoreline' by Heart Plus Up!
+			}
+
+			OceanNightMusicBox: {
+				DisplayName: Music Box (Ocean Night)
+				Tooltip: Plays 'serene tides' by Heart Plus Up!
+			}
+
+			RainLegacyMusicBox: {
+				DisplayName: Music Box (Rain - Legacy)
+				Tooltip: Plays 'Grey Sky' by Heart Plus Up!
+			}
+
+			RainMusicBox: {
+				DisplayName: Music Box (Rain)
+				Tooltip: Plays 'downpour' by Heart Plus Up!
+				DisplayNameAlt: Music Box (Rain Alt)
+				TooltipAlt: Plays 'sky fall' by CDMusic
+			}
+
+			SkeletronMusicBox: {
+				DisplayName: Music Box (Skeletron)
+				Tooltip: Plays 'Wrath From the Crypt' by Heart Plus Up!
+			}
+
+			SlimeRainMusicBox: {
+				DisplayName: Music Box (Slime Rain)
+				Tooltip: Plays 'Gelatin Showers' by Heart Plus Up!
+			}
+
+			SpaceMusicBox: {
+				DisplayName: Music Box (Space)
+				Tooltip: Plays 'Starry Ascent' by Heart Plus Up!
+			}
+
+			TownDayMusicBox: {
+				DisplayName: Music Box (Town Day)
+				Tooltip: Plays 'Haven in the Sunlight' by Heart Plus Up!
+			}
+
+			TownNightMusicBox: {
+				DisplayName: Music Box (Town Night)
+				Tooltip: Plays 'Moonlit Haven' by Heart Plus Up!
+			}
+
+			TundraMusicBox: {
+				DisplayName: Music Box (Tundra)
+				Tooltip: Plays 'Frozen Over' by Heart Plus Up!
+			}
+
+			TundraUndergroundMusicBox: {
+				DisplayName: Music Box (Underground Tundra)
+				Tooltip: Plays 'Inside the Glaciers' by Heart Plus Up!
+			}
+
+			UndergroundMusicBox: {
+				DisplayName: Music Box (Underground)
+				Tooltip: Plays 'Under the Earth' by Heart Plus Up!
+			}
+
+			UnderworldMusicBox: {
+				DisplayName: Music Box (Underworld)
+				Tooltip: Plays 'Descent Into Hell's Fury' by Heart Plus Up!
+			}
+
+			WallofFleshMusicBox: {
+				DisplayName: Music Box (Wall of Flesh)
+				Tooltip: Plays 'Fated Insurrection' by Heart Plus Up!
+			}
+
+			WorkshopTier1MusicBox: {
+				DisplayName: Music Box (Workshop - Tier 1)
+				Tooltip: Plays 'Metal, Wood, and Fire' by Heart Plus Up!
+			}
+
+			WorkshopTier2MusicBox: {
+				DisplayName: Music Box (Workshop - Tier 2)
+				Tooltip: Plays 'The Sky and the Depths' by Heart Plus Up!
+			}
+
+			WorkshopTier3MusicBox: {
+				DisplayName: Music Box (Workshop - Tier 3)
+				Tooltip: Plays 'Mythic Metals and Enchanted Fires' by Heart Plus Up!
+			}
+
+			WorkshopTier4MusicBox: {
+				DisplayName: Music Box (Workshop - Tier 4)
+				Tooltip: Plays 'Fruits of Your Labor' by Heart Plus Up!
+			}
+
+			WorkshopTier5MusicBox: {
+				DisplayName: Music Box (Workshop - Tier 5)
+				Tooltip: Plays 'False Gods and Ancient Elements' by Heart Plus Up!
+			}
+
+			WorkshopTier6MusicBox: {
+				DisplayName: Music Box (Workshop - Tier 6)
+				Tooltip: Plays 'Master's Forge' by Heart Plus Up!
+			}
+		}
+
+		Menus: {
+			ResurrectionMenu: Resurrection Style
+			MemoryMenu: Memory Style
+		}
+
+		ModSupport: {
+			MusicDisplay: {
+				SongNames: {
+					AbyssLayer3Alt: R'lyehian Depths
+					DestroyerAlt: Behemoth From Beneath
+					EyeofCthulhuAlt: Through Evil's Eye
+					KingSlimeAlt: Battle of the Bouncy
+					BloodMoonAlt: Clotted Darkness
+					CrimsonAlt: Hemorrhage
+					RainAlt: sky fall
+					Space: Starry Ascent
+					Underworld: Descent Into Hell's Fury
+					Meteorite: The Abomination's Omen
+					WorkshopTier6: Master's Forge
+					WorkshopTier5: False Gods and Ancient Elements
+					WorkshopTier4: Fruits of Your Labor
+					WorkshopTier3: Mythic Metals and Enchanted Fires
+					WorkshopTier2: The Sky and the Depths
+					WorkshopTier1: Metal, Wood, and Fire
+					TownNight: Moonlit Haven
+					TownNight_Noiseless: Moonlit Haven
+					TownDay: Haven in the Sunlight
+					Dungeon: Chambers of the Tyrant
+					GlowingMushroomFields: Psychedelic Depths
+					Corruption: Writhing Shadows
+					CorruptionUnderground: Between the Shadows
+					Crimson: Clotted Lands
+					CrimsonUnderground: Bloodstained Terror
+					Geodes: Amidst the Minerals
+					Tundra: Frozen Over
+					TundraUnderground: Inside the Glaciers
+					Caverns: Nearing the Inferno
+					Underground: Under the Earth
+					OceanNight: serene tides
+					OceanDay: shoreline
+					Desert: Scorched to Dust
+					ForestNight: Laze of the Sky
+					ForestDayEvening: A Legend's Strife (Grief)
+					ForestDayAfternoon: A Legend's Strife (Lament)
+					ForestDayMorning: A Legend's Strife (Epiphany)
+					ForestDayDawn: A Legend's Strife (Acceptance)
+					MoonLord: Virtuous Radiance
+					WallofFlesh: Fated Insurrection
+					Skeletron: Wrath From the Crypt
+					BrainofCthulhu: Madness Incarnate
+					EaterofWorlds: Menace of the Chasms
+					EyeofCthulhu: Bloodshot Barrage
+					KingSlime: Gelatinous Monarch
+					BloodMoonDeath: Sanguine Eclipse
+					BloodMoon: Congealing Shadows
+					SlimeRain: Gelatin Showers
+					Rain: downpour
+					LanternFestival: Serenity
+					HardmodeInterlude: The Resurrection of a Cruel World
+					FalseEpilogue: The Memory of a Cruel World
+					RainLegacy: Grey Sky
+				}
+
+				Authors: {
+					CDMusic: by CDMusic
+					HeartPlusUp: by Heart Plus Up!
+					HeartPlusUpFeature1: by Heart Plus Up! and novaGnomes
+					HeartPlusUpFeature2: by Heart Plus Up! and SkippyZii
+					HeartPlusUpFeature3: by Heart Plus Up! and Universe
+					Salvati: by Salvati
+					SkippyZii: by SkippyZii
+					Thriplerex: by Thriplerex
+					Universe: by Universe
+					psykomatic: by psykomatic
+				}
+			}
+		}
+
+		Loot.FirstKillCondition: Drops only on the first kill
+
+		Recipes: {
+			EvilPowder: Evil Powder
+			NameMismatchError: There is an internal name mismatch between the items in this recipe and the items in another mod. The recipe for this item has been disabled.
+		}
+	}
+}

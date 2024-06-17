@@ -1,0 +1,96 @@
+[h1]Vanilla Calamity Mod Music[/h1]
+[url=https://discord.com/invite/2jaEwNJm9e]Discord[/url] [url=https://terrariamods.wiki.gg/wiki/Vanilla_Calamity_Mod_Music]Wiki[/url]
+
+Vanilla Calamity Mod Music is an in-progress music mod that aims to replace the entire vanilla soundtrack with new songs made in the context of the Calamity Mod OST.
+
+[b]If you find any issues with this mod, its Discord server is the best place to find help.[/b]
+
+[hr]
+
+[b]Current list of tracks:[/b]
+[olist]
+[b]Environments[/b]
+[*] Forest Day - A Legend's Strife
+[*] Forest Night - Laze of the Sky
+[*] Town Day - Haven in the Sunlight
+[*] Town Night - Moonlit Haven
+[*] Underground - Under the Earth
+[*] Caverns - Nearing the Inferno
+[*] Marble & Granite Caves - Amidst the Minerals
+[*] Glowing Mushroom Fields - Psychedelic Depths
+[*] Tundra - Frozen Over
+[*] Underground Tundra - Inside the Glaciers
+[*] Desert - Scorched to Dust
+[*] Ocean Day - shoreline
+[*] Ocean Night - serene tides
+[*] Corruption - Writhing Shadows
+[*] Underground Corruption - Between the Shadows
+[*] Crimson - Clotted Lands
+[*] Underground Crimson - Bloodstained Terror
+[*] Space - Starry Acsent
+[*] Meteorite - The Abomination's Omen
+[*] Dungeon - Chambers of the Tyrant
+[*] Underworld - Descent Into Hell's Fury
+[*] Workshop Tier 1 - Metal, Wood, and Fire
+[*] Workshop Tier 2 - The Sky and the Depths
+[*] Workshop Tier 3 - Mythic Metals and Enchanted Fires
+[*] Workshop Tier 4 - Fruits of Your Labor
+[*] Workshop Tier 5 - False Gods and Ancient Elements
+[*] Workshop Tier 6 - Master's Forge
+
+[b]Bosses[/b]
+[*] King Slime - Gelatinous Monarch
+[*] Eye of Cthulhu - Bloodshot Barrage
+[*] Eater of Worlds - Menace of the Chasms
+[*] Brain of Cthulhu - Madness Incarnate
+[*] Skeletron - Wrath From the Crypt
+[*] Wall of Flesh - Fated Insurrection
+[*] Moon Lord - Virtuous Radiance
+
+[b]Events[/b]
+[*] Rain - downpour
+[*] Lantern Festival - Serenity
+[*] Slime Rain - Gelatin Showers
+[*] Blood Moon - Congealing Shadows
+[*] Blood Moon Death Mode - Sanguine Eclipse
+
+[b]Other[/b]
+[*] Hardmode Interlude - The Resurrection of a Cruel World
+[*] False Epilogue - The Memory of a Cruel World
+[*] Rain Legacy - Grey Sky
+
+[b]Alternate Themes[/b]
+[*] Deep Abyss Alt - R'lyehian Depths
+[*] Crimson Alt - Hemorrhage
+[*] Rain Alt - sky fall
+[*] Blood Moon Alt - Clotted Darkness
+[*] King Slime Alt - Battle of the Bouncy
+[*] Eye of Cthulhu Alt - Through Evil's Eye
+[*] Destroyer Alt - Behemoth From Beneath
+[/olist]
+
+[hr]
+
+[b]Credits:[/b]
+[list]
+[b]Music[/b]
+[*] Heart Plus Up!
+[*] SkippyZii
+[*] Salvati
+[*] Thriplerex
+[*] CDMusic
+[*] psykomatic
+[*] novaGnomes
+
+[b]Sprites[/b]
+[*] Heart Plus Up!
+[*] LordMetarex
+[*] Seasalt
+[*] toothbrush
+[*] IbanPlay
+[*] Cooper
+[*] PokerFace
+
+[b]Programming[/b]
+[*] apotofkoolaid
+[/list]
