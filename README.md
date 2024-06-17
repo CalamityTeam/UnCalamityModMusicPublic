@@ -6,7 +6,7 @@
 - [Official Wiki](https://terrariamods.wiki.gg/wiki/Vanilla_Calamity_Mod_Music)
 - [Patreon](https://patreon.com/fabsol)
 
-The Vanilla Calamity Music Mod is a small Terraria mod which adds Calamity's soundtrack to the game, along with music boxes for each song on the soundtrack. It is intended to be used alongside the Calamity Mod, but can be used alone. The mod must be installed using [tModLoader](https://github.com/tModLoader/tModLoader).
+The Vanilla Calamity Music Mod is a small Terraria mod which adds Calamity's vanilla soundtrack to the game, along with music boxes for each song on the soundtrack. It is intended to be used alongside the Calamity Mod, but can be used alone. The mod must be installed using [tModLoader](https://github.com/tModLoader/tModLoader).
 
 **Note:** This repository contains only the latest public release of the Vanilla Calamity Music Mod and any public contributions made since then.
 
