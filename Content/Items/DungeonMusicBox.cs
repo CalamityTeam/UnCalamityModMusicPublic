@@ -9,9 +9,7 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.DungeonMusicBox>();
 
-        public override string MusicFilePath => "Dungeon";
-
-        public override void AddRecipes()
+		public override void AddRecipes()
 		{
 			Recipe.Create(Type, 1)
 				.AddIngredient(ItemID.BlueBrick, 10)

@@ -1,7 +1,5 @@
-﻿using Microsoft.Xna.Framework;
-using System;
+﻿using System;
 using Terraria;
-using Terraria.GameContent.Events;
 using Terraria.ID;
 using Terraria.ModLoader;
 using UnCalamityModMusic.Common.Configs;
@@ -9,27 +7,7 @@ using UnCalamityModMusic.Common.ModCompatibility;
 
 namespace UnCalamityModMusic.Common.Music
 {
-    public class FalseEpilogue : ModSystem
-    {
-        public int FalseEpilogueMusicSlot = 0;
-
-        public override void OnWorldLoad()
-        {
-            FalseEpilogueMusicSlot = MusicPathing.GetMusicSlot("FalseEpilogue");
-        }
-
-        public override void UpdateUI(GameTime gameTime)
-        {
-            Player player = Main.player[Main.myPlayer];
-
-            if (CreditsRollEvent.IsEventOngoing && !player.hasCreditsSceneMusicBox)
-            {
-                Main.musicBox2 = FalseEpilogueMusicSlot;
-                return;
-            }
-        }
-    }
-    public class MoonLord : ModSceneEffect
+	public class MoonLord : ModSceneEffect
 	{
 		public override int Music => InfernumCompatibility.DecideOnMusicPath("MoonLord", "MoonLord");
 
@@ -48,7 +26,7 @@ namespace UnCalamityModMusic.Common.Music
 
 		public override bool IsSceneEffectActive(Player player)
 		{
-			return ImpendingDoomSystem.ImpendingDoomCountdown > 0 || NPC.MoonLordCountdown > 0;
+			return WorldFlags.CustomImpendingDoom > 0 || NPC.MoonLordCountdown > 0;
 		}
 
 		public override void SpecialVisuals(Player player, bool isActive)
@@ -198,7 +176,7 @@ namespace UnCalamityModMusic.Common.Music
 	}
 	public class Destroyer : ModSceneEffect
 	{
-		public override int Music => ModContent.GetInstance<MusicConfig>().DestroyerAlt ? MusicPathing.GetMusicSlot("DestroyerAlt") : InfernumCompatibility.DecideOnMusicPath("Destroyer", "MechBosses");
+		public override int Music => ModContent.GetInstance<MusicConfig>().DestroyerAltTheme ? MusicPathing.GetMusicSlot("DestroyerAlt") : InfernumCompatibility.DecideOnMusicPath("Destroyer", "MechBosses");
 
 		public override SceneEffectPriority Priority => InfernumCompatibility.DecideOnScenePriority(SceneEffectPriority.BossLow);
 
@@ -219,7 +197,7 @@ namespace UnCalamityModMusic.Common.Music
 
 		public override bool IsSceneEffectActive(Player player)
 		{
-			return ImminentDestructionSystem.ImminentDestructionCountdown > 0;
+			return WorldFlags.ImminentDestruction > 0;
 		}*/
 	}
 	public class QueenSlime : ModSceneEffect
@@ -318,7 +296,7 @@ namespace UnCalamityModMusic.Common.Music
 	}
 	public class EyeofCthulhu : ModSceneEffect
 	{
-		public override int Music => ModContent.GetInstance<MusicConfig>().EyeofCthulhuAlt ? MusicPathing.GetMusicSlot("EyeofCthulhuAlt") : InfernumCompatibility.DecideOnMusicPath("EyeofCthulhu", "EyeOfCthulhu");
+		public override int Music => ModContent.GetInstance<MusicConfig>().EyeofCthulhuAltTheme ? MusicPathing.GetMusicSlot("EyeofCthulhuAlt") : InfernumCompatibility.DecideOnMusicPath("EyeofCthulhu", "EyeOfCthulhu");
 
 		public override SceneEffectPriority Priority => InfernumCompatibility.DecideOnScenePriority(SceneEffectPriority.BossLow);
 
@@ -329,7 +307,7 @@ namespace UnCalamityModMusic.Common.Music
 	}
 	public class KingSlime : ModSceneEffect
 	{
-		public override int Music => ModContent.GetInstance<MusicConfig>().KingSlimeAlt ? MusicPathing.GetMusicSlot("KingSlimeAlt") : InfernumCompatibility.DecideOnMusicPath("KingSlime", "KingSlime");
+		public override int Music => ModContent.GetInstance<MusicConfig>().KingSlimeAltTheme ? MusicPathing.GetMusicSlot("KingSlimeAlt") : InfernumCompatibility.DecideOnMusicPath("KingSlime", "KingSlime");
 
 		public override SceneEffectPriority Priority => InfernumCompatibility.DecideOnScenePriority(SceneEffectPriority.BossLow);
 

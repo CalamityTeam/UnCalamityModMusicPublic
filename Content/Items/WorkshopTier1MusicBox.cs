@@ -10,9 +10,7 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.WorkshopTier1MusicBox>();
 
-        public override string MusicFilePath => "WorkshopTier1";
-
-        public override void AddRecipes()
+		public override void AddRecipes()
 		{
 			Recipe.Create(Type, 1)
 				.AddRecipeGroup(RecipeGroupID.Wood, 10)

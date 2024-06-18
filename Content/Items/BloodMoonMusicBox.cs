@@ -10,15 +10,13 @@ namespace UnCalamityModMusic.Content.Items
 	[LegacyName("BloodMoon1MusicBox")]
 	public class BloodMoonMusicBox : MusicBoxItem
 	{
-		public override LocalizedText DisplayName => ModContent.GetInstance<MusicConfig>().BloodMoonAlt ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.BloodMoonMusicBox.DisplayNameAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.BloodMoonMusicBox.DisplayName");
+		public override LocalizedText DisplayName => ModContent.GetInstance<MusicConfig>().BloodMoonAltTheme ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.BloodMoonMusicBox.DisplayNameAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.BloodMoonMusicBox.DisplayName");
 
-		public override LocalizedText Tooltip => ModContent.GetInstance<MusicConfig>().BloodMoonAlt ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.BloodMoonMusicBox.TooltipAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.BloodMoonMusicBox.Tooltip");
+		public override LocalizedText Tooltip => ModContent.GetInstance<MusicConfig>().BloodMoonAltTheme ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.BloodMoonMusicBox.TooltipAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.BloodMoonMusicBox.Tooltip");
 
 		public override int MusicBoxTile => ModContent.TileType<Tiles.BloodMoonMusicBox>();
 
-        public override string MusicFilePath => ModContent.GetInstance<MusicConfig>().BloodMoonAlt ? "BloodMoonAlt" : "BloodMoon";
-
-        public override void AddRecipes()
+		public override void AddRecipes()
 		{
 			var calamityMod = ModLoader.TryGetMod("CalamityMod", out Mod calamity);
 			

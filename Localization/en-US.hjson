@@ -3,65 +3,55 @@ Mods: {
 		Configs: {
 			MusicConfig: {
 				DisplayName: Music Config
-				MusicTogglesHeader: Music Toggles
-				AlternateMusicHeader: Alternate Music
+				MusicChangesHeader: Music Changes
 				ConditionChangesHeader: Condition Changes
 
 				WorkshopThemes: {
-					Label: "[i:UnCalamityModMusic/WorkshopTier1MusicBox] Workshop Themes"
+					Label: Workshop Themes
 					Tooltip:
 						'''
 						Enables the Workshop themes that play when near certain crafting stations.
-						If you're looking to disable the Town themes, use the separate No Town Music mod or use Shadow Candles.
+						If you're looking to disable the Town themes, use the separate No Town Music mod.
 						'''
 				}
 
-				HardmodeInterlude: {
-					Label: "[i:UnCalamityModMusic/HardmodeInterludeMusicBox] Hardmode Interlude"
-					Tooltip:
-						'''
-						Enables a music event that plays when entering Hardmode.
-						If you're looking to disable the Credits, use the separate No In-game Credits mod.
-						'''
-				}
-
-				DeepAbyssAlt: {
-					Label: "[i:UnCalamityModMusic/AbyssLayer3AltMusicBox] Deep Abyss Alt"
+				DeepAbyssAltTheme: {
+					Label: Deep Abyss Alt Theme
 					Tooltip: Enables an alternate theme for the 3rd layer of the Abyss.
 				}
 
-				CrimsonAlt: {
-					Label: "[i:UnCalamityModMusic/CrimsonMusicBox] Crimson Alt"
+				CrimsonAltTheme: {
+					Label: Crimson Alt Theme
 					Tooltip: Enables an alternate theme for the Crimson from the discontinued Terrawaves mod.
 				}
 
-				RainAlt: {
-					Label: "[i:UnCalamityModMusic/RainMusicBox] Rain Alt"
+				RainAltTheme: {
+					Label: Rain Alt Theme
 					Tooltip: Enables an alternate theme for the Rain event from the discontinued Terrawaves mod.
 				}
 
-				BloodMoonAlt: {
-					Label: "[i:UnCalamityModMusic/BloodMoonMusicBox] Blood Moon Alt"
+				BloodMoonAltTheme: {
+					Label: Blood Moon Alt Theme
 					Tooltip: Enables an alternate theme for the Blood Moon event from the discontinued Terrawaves mod.
 				}
 
-				KingSlimeAlt: {
-					Label: "[i:UnCalamityModMusic/KingSlimeMusicBox] King Slime Alt"
+				KingSlimeAltTheme: {
+					Label: King Slime Alt Theme
 					Tooltip: Enables an alternate theme for King Slime from the discontinued Terrawaves mod.
 				}
 
-				EyeofCthulhuAlt: {
-					Label: "[i:UnCalamityModMusic/EyeofCthulhuMusicBox] Eye of Cthulhu Alt"
+				EyeofCthulhuAltTheme: {
+					Label: Eye of Cthulhu Alt Theme
 					Tooltip: Enables an alternate theme for the Eye of Cthulhu from the discontinued Terrawaves mod.
 				}
 
-				DestroyerAlt: {
-					Label: "[i:DestroyerPetItem] Destroyer Alt"
+				DestroyerAltTheme: {
+					Label: Destroyer Alt Theme
 					Tooltip: Enables an alternate theme for the Destroyer from the discontinued Terrawaves mod.
 				}
 
 				PrioritizeInfernumMusic: {
-					Label: "[i:WallOfFleshGoatMountItem] Prioritize Infernum Music"
+					Label: Prioritize Infernum Mod Music
 					Tooltip:
 						'''
 						Enables Infernum music to take priority over VCMM music.
@@ -70,8 +60,8 @@ Mods: {
 						'''
 				}
 
-				OverrideAnahitasLure: {
-					Label: "[i:UnCalamityModMusic/OceanDayMusicBox] Override Anahita's Lure"
+				OverrideAnahitasLureTheme: {
+					Label: Ocean Themes Override Anahita's Lure Theme
 					Tooltip:
 						'''
 						Overrides the ??? theme with the Ocean themes.
@@ -86,7 +76,7 @@ Mods: {
 				OtherChangesHeader: Other Changes
 
 				AmbienceFrequency: {
-					Label: "[i:Bunny] Ambience Frequency"
+					Label: Ambience Frequency
 					Tooltip:
 						'''
 						Adjusts the frequency at which ambience will replace normal music, from 0% to 100%.
@@ -95,17 +85,17 @@ Mods: {
 				}
 
 				DisableBeeHiveAmbience: {
-					Label: "[i:BeeWax] Disable Bee Hive Ambience"
+					Label: Disable Bee Hive Ambience
 					Tooltip: Disables ambience in Bee Hives if ambience is enabled.
 				}
 
 				DisableSpiderCaveAmbience: {
-					Label: "[i:SpiderFang] Disable Spider Cave Ambience"
+					Label: Disable Spider Cave Ambience
 					Tooltip: Disables ambience in Spider Caves if ambience is enabled.
 				}
 
 				MusicBoxResprite: {
-					Label: "[i:MusicBox] Empty Music Box Resprite"
+					Label: Empty Music Box Resprite
 					Tooltip: Enables a resprite of the empty, unrecorded music box.
 				}
 			}
@@ -382,7 +372,6 @@ Mods: {
 					WorkshopTier2: The Sky and the Depths
 					WorkshopTier1: Metal, Wood, and Fire
 					TownNight: Moonlit Haven
-					TownNight_Noiseless: Moonlit Haven
 					TownDay: Haven in the Sunlight
 					Dungeon: Chambers of the Tyrant
 					GlowingMushroomFields: Psychedelic Depths

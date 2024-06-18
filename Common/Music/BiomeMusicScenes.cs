@@ -252,7 +252,7 @@ namespace UnCalamityModMusic.Common.Music
 
 		public override bool IsSceneEffectActive(Player player)
 		{
-			return PlayerFlags.ZoneDeepAbyss && !(PlayerFlags.TownSceneActive || PlayerFlags.WorkshopSceneActive) && ModContent.GetInstance<MusicConfig>().DeepAbyssAlt;
+			return PlayerFlags.ZoneDeepAbyss && !(PlayerFlags.TownSceneActive || PlayerFlags.WorkshopSceneActive) && ModContent.GetInstance<MusicConfig>().DeepAbyssAltTheme;
 		}
 	}
 	public class GlowingMushroomFields : ModSceneEffect
@@ -290,7 +290,7 @@ namespace UnCalamityModMusic.Common.Music
 	}
 	public class Crimson : ModSceneEffect
 	{
-		public override int Music => ModContent.GetInstance<MusicConfig>().CrimsonAlt ? MusicPathing.GetMusicSlot("CrimsonAlt") : MusicPathing.GetMusicSlot("Crimson");
+		public override int Music => ModContent.GetInstance<MusicConfig>().CrimsonAltTheme ? MusicPathing.GetMusicSlot("CrimsonAlt") : MusicPathing.GetMusicSlot("Crimson");
 
 		public override SceneEffectPriority Priority => SceneEffectPriority.BiomeHigh;
 

@@ -1,7 +1,6 @@
 ﻿using System.Reflection;
 using Terraria;
 using Terraria.GameContent.Events;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace UnCalamityModMusic.Common
@@ -122,16 +121,8 @@ namespace UnCalamityModMusic.Common
 			}
 			else
 			{
-                if (player.ZoneShadowCandle || player.inventory[player.selectedItem].type == ItemID.ShadowCandle)
-				{
-                    inTown = false;
-                    inUgTown = false;
-                }
-				else
-				{
-                    inTown = player.townNPCs > 2f && (((notRaining && player.ZoneOverworldHeight) && (notInExcludedTownEvent && player.ZoneOverworldHeight)) || inSpace);
-                    inUgTown = player.townNPCs > 2f && (player.ZoneDirtLayerHeight || player.ZoneRockLayerHeight || player.ZoneUnderworldHeight);
-                }
+				inTown = player.townNPCs > 2f && (((notRaining && player.ZoneOverworldHeight) && (notInExcludedTownEvent && player.ZoneOverworldHeight)) || inSpace);
+				inUgTown = player.townNPCs > 2f && (player.ZoneDirtLayerHeight || player.ZoneRockLayerHeight || player.ZoneUnderworldHeight);
 			}
 
 			if (calamityMod)
@@ -162,7 +153,7 @@ namespace UnCalamityModMusic.Common
 				downedPlaguebringerGoliath = (bool)calamity.Call("GetBossDowned", "plaguebringergoliath");
 				downedAstrumAureus = (bool)calamity.Call("GetBossDowned", "astrumaureus");
 				downedLeviathan = (bool)calamity.Call("GetBossDowned", "anahitaleviathan");
-				downedCalamitasClone = (bool)calamity.Call("GetBossDowned", "calamitasclone");
+				downedCalamitasClone = (bool)calamity.Call("GetBossDowned", "calamitas");
 				downedBrimstoneElemental = (bool)calamity.Call("GetBossDowned", "brimstoneelemental");
 				downedAquaticScourge = (bool)calamity.Call("GetBossDowned", "aquaticscourge");
 				downedCryogen = (bool)calamity.Call("GetBossDowned", "cryogen");

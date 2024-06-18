@@ -1,5 +1,4 @@
-﻿using Microsoft.Xna.Framework;
-using Terraria;
+﻿using Terraria;
 using Terraria.GameContent.Events;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -7,47 +6,7 @@ using UnCalamityModMusic.Common.Configs;
 
 namespace UnCalamityModMusic.Common.Music
 {
-	public class FrostMoon : ModSystem
-	{
-		/*public int FrostMoonMusicSlot = 0;
-
-		public override void OnWorldLoad()
-		{
-			FrostMoonMusicSlot = MusicPathing.GetMusicSlot("FrostMoon");
-		}
-
-		public override void UpdateUI(GameTime gameTime)
-		{
-			Player player = Main.player[Main.myPlayer];
-
-			if (Main.snowMoon && Main.musicBox2 == -1 && (PlayerFlags.onSurface || Main.remixWorld))
-			{
-				Main.musicBox2 = FrostMoonMusicSlot;
-				return;
-			}
-		}*/
-	}
-    public class PumpkinMoon : ModSystem
-    {
-        /*public int PumpkinMoonMusicSlot = 0;
-
-        public override void OnWorldLoad()
-        {
-            PumpkinMoonMusicSlot = MusicPathing.GetMusicSlot("PumpkinMoon");
-        }
-
-        public override void UpdateUI(GameTime gameTime)
-        {
-            Player player = Main.player[Main.myPlayer];
-
-            if (Main.pumpkinMoon && Main.musicBox2 == -1 && (PlayerFlags.onSurface || Main.remixWorld))
-			{
-				Main.musicBox2 = PumpkinMoonMusicSlot;
-				return;
-			}
-        }*/
-    }
-    public class TorchGod : ModSceneEffect
+	public class TorchGod : ModSceneEffect
 	{
 		/*public override int Music => MusicPathing.GetMusicSlot("TorchGod");
 
@@ -249,7 +208,7 @@ namespace UnCalamityModMusic.Common.Music
 	}
 	public class BloodMoon : ModSceneEffect
 	{
-		public override int Music => ModContent.GetInstance<MusicConfig>().BloodMoonAlt ? MusicPathing.GetMusicSlot("BloodMoonAlt") : (PlayerFlags.deathMode ? MusicPathing.GetMusicSlot("BloodMoonDeath") : MusicPathing.GetMusicSlot("BloodMoon"));
+		public override int Music => ModContent.GetInstance<MusicConfig>().BloodMoonAltTheme ? MusicPathing.GetMusicSlot("BloodMoonAlt") : (PlayerFlags.deathMode ? MusicPathing.GetMusicSlot("BloodMoonDeath") : MusicPathing.GetMusicSlot("BloodMoon"));
 
 		public override SceneEffectPriority Priority => SceneEffectPriority.Environment;
 
@@ -325,7 +284,7 @@ namespace UnCalamityModMusic.Common.Music
 	}
 	public class Rain : ModSceneEffect
 	{
-		public override int Music => ModContent.GetInstance<MusicConfig>().RainAlt ? MusicPathing.GetMusicSlot("RainAlt") : MusicPathing.GetMusicSlot("Rain");
+		public override int Music => ModContent.GetInstance<MusicConfig>().RainAltTheme ? MusicPathing.GetMusicSlot("RainAlt") : MusicPathing.GetMusicSlot("Rain");
 
 		public override SceneEffectPriority Priority => SceneEffectPriority.BiomeMedium;
 

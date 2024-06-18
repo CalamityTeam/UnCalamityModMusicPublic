@@ -9,9 +9,7 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.MoonLordMusicBox>();
 
-        public override string MusicFilePath => "MoonLord";
-
-        public override void AddRecipes()
+		public override void AddRecipes()
 		{
 			Recipe.Create(Type, 1)
 				.AddIngredient(ItemID.MoonLordTrophy, 1)

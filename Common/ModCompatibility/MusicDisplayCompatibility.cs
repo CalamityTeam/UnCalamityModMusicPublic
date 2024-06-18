@@ -44,7 +44,6 @@ namespace UnCalamityModMusic.Common.ModCompatibility
             AddMusic("WorkshopTier2", "HeartPlusUp", "Biomes");
             AddMusic("WorkshopTier1", "HeartPlusUp", "Biomes");
             AddMusic("TownNight", "HeartPlusUp", "Biomes");
-            AddMusic("TownNight_Noiseless", "HeartPlusUp", "Biomes");
             AddMusic("TownDay", "HeartPlusUp", "Biomes");
             //AddMusic("JungleTemple", "Universe", "Biomes");
             AddMusic("Dungeon", "HeartPlusUp", "Biomes");

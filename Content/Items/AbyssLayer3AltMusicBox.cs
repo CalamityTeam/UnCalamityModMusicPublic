@@ -11,9 +11,7 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.AbyssLayer3AltMusicBox>();
 
-        public override string MusicFilePath => "AbyssLayer3Alt";
-
-        public override void AddRecipes()
+		public override void AddRecipes()
 		{
 			var calamityMod = ModLoader.TryGetMod("CalamityMod", out Mod calamity);
 

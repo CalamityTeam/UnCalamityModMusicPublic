@@ -10,9 +10,7 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.CorruptionUndergroundMusicBox>();
 
-        public override string MusicFilePath => "CorruptionUnderground";
-
-        public override void AddRecipes()
+		public override void AddRecipes()
 		{
 			Recipe.Create(Type, 1)
 				.AddIngredient(ItemID.EbonstoneBlock, 10)

@@ -10,9 +10,7 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.WorkshopTier3MusicBox>();
 
-        public override string MusicFilePath => "WorkshopTier3";
-
-        public override void AddRecipes()
+		public override void AddRecipes()
 		{
 			Recipe.Create(Type, 1)
 				.AddRecipeGroup("VCMM:MythrilBarGroup", 3)

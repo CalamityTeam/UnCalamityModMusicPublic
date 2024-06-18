@@ -16,7 +16,7 @@ namespace UnCalamityModMusic.Common.Music
 
         public override bool IsSceneEffectActive(Player player)
         {
-            return IsAnahitaLureActive() && ModContent.GetInstance<MusicConfig>().OverrideAnahitasLure;
+            return IsAnahitaLureActive() && ModContent.GetInstance<MusicConfig>().OverrideAnahitasLureTheme;
         }
 
         public static bool IsAnahitaLureActive()
@@ -71,7 +71,7 @@ namespace UnCalamityModMusic.Common.Music
     }
     public class Rain_LureOverride : LureOverrideBaseScene
     {
-        public override string Path => ModContent.GetInstance<MusicConfig>().RainAlt ? "RainAlt" : "Rain";
+        public override string Path => ModContent.GetInstance<MusicConfig>().RainAltTheme ? "RainAlt" : "Rain";
 
         public override bool IsSceneEffectActive(Player player)
         {

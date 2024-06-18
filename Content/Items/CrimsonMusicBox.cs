@@ -9,15 +9,13 @@ namespace UnCalamityModMusic.Content.Items
 {
 	public class CrimsonMusicBox : MusicBoxItem
 	{
-		public override LocalizedText DisplayName => ModContent.GetInstance<MusicConfig>().CrimsonAlt ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.CrimsonMusicBox.DisplayNameAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.CrimsonMusicBox.DisplayName");
+		public override LocalizedText DisplayName => ModContent.GetInstance<MusicConfig>().CrimsonAltTheme ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.CrimsonMusicBox.DisplayNameAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.CrimsonMusicBox.DisplayName");
 
-		public override LocalizedText Tooltip => ModContent.GetInstance<MusicConfig>().CrimsonAlt ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.CrimsonMusicBox.TooltipAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.CrimsonMusicBox.Tooltip");
+		public override LocalizedText Tooltip => ModContent.GetInstance<MusicConfig>().CrimsonAltTheme ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.CrimsonMusicBox.TooltipAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.CrimsonMusicBox.Tooltip");
 
 		public override int MusicBoxTile => ModContent.TileType<Tiles.CrimsonMusicBox>();
 
-        public override string MusicFilePath => ModContent.GetInstance<MusicConfig>().CrimsonAlt ? "CrimsonAlt" : "Crimson";
-
-        public override void AddRecipes()
+		public override void AddRecipes()
 		{
 			Recipe.Create(Type, 1)
 				.AddIngredient(ItemID.Shadewood, 10)

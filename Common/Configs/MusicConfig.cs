@@ -8,51 +8,45 @@ namespace UnCalamityModMusic.Common.Configs
 	{
 		public override ConfigScope Mode => ConfigScope.ClientSide;
 
-		[Header("$Mods.UnCalamityModMusic.Configs.MusicConfig.MusicTogglesHeader")]
+		[Header("$Mods.UnCalamityModMusic.Configs.MusicConfig.MusicChangesHeader")]
 
-        [BackgroundColor(192, 54, 64, 192)]
-        [DefaultValue(true)]
-        public bool WorkshopThemes { get; set; }
+		[BackgroundColor(192, 54, 64, 192)]
+		[DefaultValue(true)]
+		public bool WorkshopThemes { get; set; }
 
-        [BackgroundColor(192, 54, 64, 192)]
-        [DefaultValue(true)]
-        public bool HardmodeInterlude { get; set; }
-
-        [Header("$Mods.UnCalamityModMusic.Configs.MusicConfig.AlternateMusicHeader")]
-
-        [BackgroundColor(192, 54, 64, 192)]
+		[BackgroundColor(192, 54, 64, 192)]
 		[DefaultValue(false)]
-		public bool DeepAbyssAlt { get; set; }
+		public bool DeepAbyssAltTheme { get; set; }
 
 		[ReloadRequired]
 		[BackgroundColor(192, 54, 64, 192)]
 		[DefaultValue(false)]
-		public bool CrimsonAlt { get; set; }
+		public bool CrimsonAltTheme { get; set; }
 
 		[ReloadRequired]
 		[BackgroundColor(192, 54, 64, 192)]
 		[DefaultValue(false)]
-		public bool RainAlt { get; set; }
+		public bool RainAltTheme { get; set; }
 
 		[ReloadRequired]
 		[BackgroundColor(192, 54, 64, 192)]
 		[DefaultValue(false)]
-		public bool BloodMoonAlt { get; set; }
+		public bool BloodMoonAltTheme { get; set; }
 
 		[ReloadRequired]
 		[BackgroundColor(192, 54, 64, 192)]
 		[DefaultValue(false)]
-		public bool KingSlimeAlt { get; set; }
+		public bool KingSlimeAltTheme { get; set; }
 
 		[ReloadRequired]
 		[BackgroundColor(192, 54, 64, 192)]
 		[DefaultValue(false)]
-		public bool EyeofCthulhuAlt { get; set; }
+		public bool EyeofCthulhuAltTheme { get; set; }
 
 		[ReloadRequired]
 		[BackgroundColor(192, 54, 64, 192)]
 		[DefaultValue(false)]
-		public bool DestroyerAlt { get; set; }
+		public bool DestroyerAltTheme { get; set; }
 
 		[Header("$Mods.UnCalamityModMusic.Configs.MusicConfig.ConditionChangesHeader")]
 
@@ -62,6 +56,6 @@ namespace UnCalamityModMusic.Common.Configs
 
 		[BackgroundColor(192, 54, 64, 192)]
 		[DefaultValue(false)]
-		public bool OverrideAnahitasLure { get; set; }
+		public bool OverrideAnahitasLureTheme { get; set; }
 	}
 }

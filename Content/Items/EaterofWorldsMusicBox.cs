@@ -9,9 +9,7 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.EaterofWorldsMusicBox>();
 
-        public override string MusicFilePath => "EaterofWorlds";
-
-        public override void AddRecipes()
+		public override void AddRecipes()
 		{
 			Recipe.Create(Type, 1)
 				.AddIngredient(ItemID.EaterofWorldsTrophy, 1)
