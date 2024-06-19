@@ -1,8 +1,8 @@
 # Vanilla Calamity Music Mod
 [![Discord](https://img.shields.io/discord/225030931008847874)](https://discord.gg/vVkmfJVY8W)
 - [Official site](https://calamitymod.com/)
-- [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2816188633)
-- [Discord](https://discord.gg/vVkmfJVY8W)
+- [Steam Workshop](https://calamitymod.com/downloadvanillamusic/)
+- [Discord](https://discord.gg/2jaEwNJm9e)
 - [Official Wiki](https://terrariamods.wiki.gg/wiki/Vanilla_Calamity_Mod_Music)
 - [Patreon](https://www.patreon.com/HeartPlusUp)
 
