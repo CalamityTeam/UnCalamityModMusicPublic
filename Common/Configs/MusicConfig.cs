@@ -18,36 +18,6 @@ namespace UnCalamityModMusic.Common.Configs
 		[DefaultValue(false)]
 		public bool DeepAbyssAltTheme { get; set; }
 
-		[ReloadRequired]
-		[BackgroundColor(192, 54, 64, 192)]
-		[DefaultValue(false)]
-		public bool CrimsonAltTheme { get; set; }
-
-		[ReloadRequired]
-		[BackgroundColor(192, 54, 64, 192)]
-		[DefaultValue(false)]
-		public bool RainAltTheme { get; set; }
-
-		[ReloadRequired]
-		[BackgroundColor(192, 54, 64, 192)]
-		[DefaultValue(false)]
-		public bool BloodMoonAltTheme { get; set; }
-
-		[ReloadRequired]
-		[BackgroundColor(192, 54, 64, 192)]
-		[DefaultValue(false)]
-		public bool KingSlimeAltTheme { get; set; }
-
-		[ReloadRequired]
-		[BackgroundColor(192, 54, 64, 192)]
-		[DefaultValue(false)]
-		public bool EyeofCthulhuAltTheme { get; set; }
-
-		[ReloadRequired]
-		[BackgroundColor(192, 54, 64, 192)]
-		[DefaultValue(false)]
-		public bool DestroyerAltTheme { get; set; }
-
 		[Header("$Mods.UnCalamityModMusic.Configs.MusicConfig.ConditionChangesHeader")]
 
 		[BackgroundColor(192, 54, 64, 192)]

@@ -290,7 +290,7 @@ namespace UnCalamityModMusic.Common.Music
 	}
 	public class Crimson : ModSceneEffect
 	{
-		public override int Music => ModContent.GetInstance<MusicConfig>().CrimsonAltTheme ? MusicPathing.GetMusicSlot("CrimsonAlt") : MusicPathing.GetMusicSlot("Crimson");
+		public override int Music => MusicPathing.GetMusicSlot("Crimson");
 
 		public override SceneEffectPriority Priority => SceneEffectPriority.BiomeHigh;
 

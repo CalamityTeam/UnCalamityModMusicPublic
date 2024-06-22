@@ -1,18 +1,12 @@
 using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
 using UnCalamityModMusic.Common;
-using UnCalamityModMusic.Common.Configs;
 
 namespace UnCalamityModMusic.Content.Items
 {
 	public class EyeofCthulhuMusicBox : MusicBoxItem
 	{
-		public override LocalizedText DisplayName => ModContent.GetInstance<MusicConfig>().EyeofCthulhuAltTheme ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.EyeofCthulhuMusicBox.DisplayNameAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.EyeofCthulhuMusicBox.DisplayName");
-
-		public override LocalizedText Tooltip => ModContent.GetInstance<MusicConfig>().EyeofCthulhuAltTheme ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.EyeofCthulhuMusicBox.TooltipAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.EyeofCthulhuMusicBox.Tooltip");
-
 		public override int MusicBoxTile => ModContent.TileType<Tiles.EyeofCthulhuMusicBox>();
 
 		public override void AddRecipes()

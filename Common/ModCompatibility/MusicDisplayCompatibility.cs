@@ -26,12 +26,6 @@ namespace UnCalamityModMusic.Common.ModCompatibility
             }
 
             AddMusic("AbyssLayer3Alt", "HeartPlusUp", "Alternates");
-            AddMusic("DestroyerAlt", "CDMusic", "Alternates");
-            AddMusic("EyeofCthulhuAlt", "CDMusic", "Alternates");
-            AddMusic("KingSlimeAlt", "CDMusic", "Alternates");
-            AddMusic("BloodMoonAlt", "CDMusic", "Alternates");
-            AddMusic("CrimsonAlt", "CDMusic", "Alternates");
-            AddMusic("RainAlt", "CDMusic", "Alternates");
             AddMusic("Space", "HeartPlusUp", "Biomes");
             AddMusic("Underworld", "HeartPlusUp", "Biomes");
             //AddMusic("Aether", "HeartPlusUp", "Biomes");

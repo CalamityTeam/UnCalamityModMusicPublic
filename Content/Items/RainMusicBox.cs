@@ -1,18 +1,12 @@
 using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
 using UnCalamityModMusic.Common;
-using UnCalamityModMusic.Common.Configs;
 
 namespace UnCalamityModMusic.Content.Items
 {
 	public class RainMusicBox : MusicBoxItem
 	{
-		public override LocalizedText DisplayName => ModContent.GetInstance<MusicConfig>().RainAltTheme ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.RainMusicBox.DisplayNameAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.RainMusicBox.DisplayName");
-
-		public override LocalizedText Tooltip => ModContent.GetInstance<MusicConfig>().RainAltTheme ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.RainMusicBox.TooltipAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.RainMusicBox.Tooltip");
-
 		public override int MusicBoxTile => ModContent.TileType<Tiles.RainMusicBox>();
 
 		public override void AddRecipes()

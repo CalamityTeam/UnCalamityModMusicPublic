@@ -1,18 +1,12 @@
 using Terraria;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
 using UnCalamityModMusic.Common;
-using UnCalamityModMusic.Common.Configs;
 
 namespace UnCalamityModMusic.Content.Items
 {
 	public class CrimsonMusicBox : MusicBoxItem
 	{
-		public override LocalizedText DisplayName => ModContent.GetInstance<MusicConfig>().CrimsonAltTheme ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.CrimsonMusicBox.DisplayNameAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.CrimsonMusicBox.DisplayName");
-
-		public override LocalizedText Tooltip => ModContent.GetInstance<MusicConfig>().CrimsonAltTheme ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.CrimsonMusicBox.TooltipAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.CrimsonMusicBox.Tooltip");
-
 		public override int MusicBoxTile => ModContent.TileType<Tiles.CrimsonMusicBox>();
 
 		public override void AddRecipes()

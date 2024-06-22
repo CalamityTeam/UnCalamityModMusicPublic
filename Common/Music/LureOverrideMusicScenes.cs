@@ -71,7 +71,7 @@ namespace UnCalamityModMusic.Common.Music
     }
     public class Rain_LureOverride : LureOverrideBaseScene
     {
-        public override string Path => ModContent.GetInstance<MusicConfig>().RainAltTheme ? "RainAlt" : "Rain";
+        public override string Path => "Rain";
 
         public override bool IsSceneEffectActive(Player player)
         {

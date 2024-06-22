@@ -1,6 +1,5 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
-using UnCalamityModMusic.Common.Configs;
 
 namespace UnCalamityModMusic.Common
 {
@@ -21,61 +20,7 @@ namespace UnCalamityModMusic.Common
             if (!Main.dedServ)
             {
                 //Alternates
-                if (ModContent.GetInstance<MusicConfig>().DestroyerAltTheme)
-                {
-                    //AddMusicBox("DestroyerAlt", ModContent.ItemType<Content.Items.DestroyerMusicBox>(), ModContent.TileType<Content.Tiles.DestroyerMusicBox>());
-                }
-                else
-                {
-                    //AddMusicBox("Destroyer", ModContent.ItemType<Content.Items.DestroyerMusicBox>(), ModContent.TileType<Content.Tiles.DestroyerMusicBox>());
-                }
-
-                if (ModContent.GetInstance<MusicConfig>().EyeofCthulhuAltTheme)
-                {
-                    AddMusicBox("EyeofCthulhuAlt", ModContent.ItemType<Content.Items.EyeofCthulhuMusicBox>(), ModContent.TileType<Content.Tiles.EyeofCthulhuMusicBox>());
-                }
-                else
-                {
-                    AddMusicBox("EyeofCthulhu", ModContent.ItemType<Content.Items.EyeofCthulhuMusicBox>(), ModContent.TileType<Content.Tiles.EyeofCthulhuMusicBox>());
-                }
-
-                if (ModContent.GetInstance<MusicConfig>().KingSlimeAltTheme)
-                {
-                    AddMusicBox("KingSlimeAlt", ModContent.ItemType<Content.Items.KingSlimeMusicBox>(), ModContent.TileType<Content.Tiles.KingSlimeMusicBox>());
-                }
-                else
-                {
-                    AddMusicBox("KingSlime", ModContent.ItemType<Content.Items.KingSlimeMusicBox>(), ModContent.TileType<Content.Tiles.KingSlimeMusicBox>());
-                }
-
-                if (ModContent.GetInstance<MusicConfig>().BloodMoonAltTheme)
-                {
-                    AddMusicBox("BloodMoonAlt", ModContent.ItemType<Content.Items.BloodMoonMusicBox>(), ModContent.TileType<Content.Tiles.BloodMoonMusicBox>());
-                }
-                else
-                {
-                    AddMusicBox("BloodMoon", ModContent.ItemType<Content.Items.BloodMoonMusicBox>(), ModContent.TileType<Content.Tiles.BloodMoonMusicBox>());
-                }
-
                 AddMusicBox("AbyssLayer3Alt", ModContent.ItemType<Content.Items.AbyssLayer3AltMusicBox>(), ModContent.TileType<Content.Tiles.AbyssLayer3AltMusicBox>());
-
-                if (ModContent.GetInstance<MusicConfig>().CrimsonAltTheme)
-                {
-                    AddMusicBox("CrimsonAlt", ModContent.ItemType<Content.Items.CrimsonMusicBox>(), ModContent.TileType<Content.Tiles.CrimsonMusicBox>());
-                }
-                else
-                {
-                    AddMusicBox("Crimson", ModContent.ItemType<Content.Items.CrimsonMusicBox>(), ModContent.TileType<Content.Tiles.CrimsonMusicBox>());
-                }
-
-                if (ModContent.GetInstance<MusicConfig>().RainAltTheme)
-                {
-                    AddMusicBox("RainAlt", ModContent.ItemType<Content.Items.RainMusicBox>(), ModContent.TileType<Content.Tiles.RainMusicBox>());
-                }
-                else
-                {
-                    AddMusicBox("Rain", ModContent.ItemType<Content.Items.RainMusicBox>(), ModContent.TileType<Content.Tiles.RainMusicBox>());
-                }
 
                 //Biomes
                 AddMusicBox("Space", ModContent.ItemType<Content.Items.SpaceMusicBox>(), ModContent.TileType<Content.Tiles.SpaceMusicBox>());

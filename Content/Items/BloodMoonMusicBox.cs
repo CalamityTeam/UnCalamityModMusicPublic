@@ -3,17 +3,12 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using UnCalamityModMusic.Common;
-using UnCalamityModMusic.Common.Configs;
 
 namespace UnCalamityModMusic.Content.Items
 {
 	[LegacyName("BloodMoon1MusicBox")]
 	public class BloodMoonMusicBox : MusicBoxItem
 	{
-		public override LocalizedText DisplayName => ModContent.GetInstance<MusicConfig>().BloodMoonAltTheme ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.BloodMoonMusicBox.DisplayNameAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.BloodMoonMusicBox.DisplayName");
-
-		public override LocalizedText Tooltip => ModContent.GetInstance<MusicConfig>().BloodMoonAltTheme ? Language.GetOrRegister("Mods.UnCalamityModMusic.Items.BloodMoonMusicBox.TooltipAlt") : Language.GetOrRegister("Mods.UnCalamityModMusic.Items.BloodMoonMusicBox.Tooltip");
-
 		public override int MusicBoxTile => ModContent.TileType<Tiles.BloodMoonMusicBox>();
 
 		public override void AddRecipes()

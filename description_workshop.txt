@@ -1,13 +1,19 @@
-[h1]Vanilla Calamity Mod Music[/h1]
-[url=https://discord.com/invite/2jaEwNJm9e]Discord[/url] [url=https://terrariamods.wiki.gg/wiki/Vanilla_Calamity_Mod_Music]Wiki[/url]
+﻿[h1]Vanilla Calamity Mod Music[/h1]
+[url=https://discord.com/invite/2jaEwNJm9e]Discord[/url] [url=https://terrariamods.wiki.gg/wiki/Vanilla_Calamity_Mod_Music]Official Wiki[/url]
 
-Vanilla Calamity Mod Music is an in-progress music mod that aims to replace the entire vanilla soundtrack with new songs made in the context of the Calamity Mod OST.
+[b]Vanilla Calamity Music Mod (aka VCMM) is an in-progress music expansion for Calamity.[/b] It aims to replace the entire vanilla Terraria soundtrack with new songs made in the context of the Calamity Mod OST.
+
+For the main Calamity soundtrack used for Calamity bosses, biomes and events, subscribe to the primary music mod:
+https://steamcommunity.com/sharedfiles/filedetails/?id=2824688266
+
+For Calamity game content, e.g. items and bosses, subscribe to the main Calamity Mod:
+https://steamcommunity.com/sharedfiles/filedetails/?id=2824688072
 
 [b]If you find any issues with this mod, its Discord server is the best place to find help.[/b]
 
 [hr]
 
-[b]Current list of tracks:[/b]
+Current list of tracks:
 [olist]
 [b]Environments[/b]
 [*] Forest Day - A Legend's Strife
@@ -61,12 +67,6 @@ Vanilla Calamity Mod Music is an in-progress music mod that aims to replace the 
 
 [b]Alternate Themes[/b]
 [*] Deep Abyss Alt - R'lyehian Depths
-[*] Crimson Alt - Hemorrhage
-[*] Rain Alt - sky fall
-[*] Blood Moon Alt - Clotted Darkness
-[*] King Slime Alt - Battle of the Bouncy
-[*] Eye of Cthulhu Alt - Through Evil's Eye
-[*] Destroyer Alt - Behemoth From Beneath
 [/olist]
 
 [hr]
@@ -78,7 +78,6 @@ Vanilla Calamity Mod Music is an in-progress music mod that aims to replace the 
 [*] SkippyZii
 [*] Salvati
 [*] Thriplerex
-[*] CDMusic
 [*] psykomatic
 [*] novaGnomes
 

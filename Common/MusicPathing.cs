@@ -13,13 +13,7 @@ namespace UnCalamityModMusic.Common
             musicPaths = new Dictionary<string, int>
             {
                 //Alternates
-                {"DestroyerAlt", MusicLoader.GetMusicSlot(mod, "Assets/Music/Alternates/DestroyerAlt")},
-                {"EyeofCthulhuAlt", MusicLoader.GetMusicSlot(mod, "Assets/Music/Alternates/EyeofCthulhuAlt")},
-                {"KingSlimeAlt", MusicLoader.GetMusicSlot(mod, "Assets/Music/Alternates/KingSlimeAlt")},
-                {"BloodMoonAlt", MusicLoader.GetMusicSlot(mod, "Assets/Music/Alternates/BloodMoonAlt")},
                 {"AbyssLayer3Alt", MusicLoader.GetMusicSlot(mod, "Assets/Music/Alternates/AbyssLayer3Alt")},
-                {"CrimsonAlt", MusicLoader.GetMusicSlot(mod, "Assets/Music/Alternates/CrimsonAlt")},
-                {"RainAlt", MusicLoader.GetMusicSlot(mod, "Assets/Music/Alternates/RainAlt")},
 
                 //Biomes
                 {"Space", MusicLoader.GetMusicSlot(mod, "Assets/Music/Biomes/Space")},

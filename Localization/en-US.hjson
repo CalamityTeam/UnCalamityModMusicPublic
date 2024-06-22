@@ -20,36 +20,6 @@ Mods: {
 					Tooltip: Enables an alternate theme for the 3rd layer of the Abyss.
 				}
 
-				CrimsonAltTheme: {
-					Label: Crimson Alt Theme
-					Tooltip: Enables an alternate theme for the Crimson from the discontinued Terrawaves mod.
-				}
-
-				RainAltTheme: {
-					Label: Rain Alt Theme
-					Tooltip: Enables an alternate theme for the Rain event from the discontinued Terrawaves mod.
-				}
-
-				BloodMoonAltTheme: {
-					Label: Blood Moon Alt Theme
-					Tooltip: Enables an alternate theme for the Blood Moon event from the discontinued Terrawaves mod.
-				}
-
-				KingSlimeAltTheme: {
-					Label: King Slime Alt Theme
-					Tooltip: Enables an alternate theme for King Slime from the discontinued Terrawaves mod.
-				}
-
-				EyeofCthulhuAltTheme: {
-					Label: Eye of Cthulhu Alt Theme
-					Tooltip: Enables an alternate theme for the Eye of Cthulhu from the discontinued Terrawaves mod.
-				}
-
-				DestroyerAltTheme: {
-					Label: Destroyer Alt Theme
-					Tooltip: Enables an alternate theme for the Destroyer from the discontinued Terrawaves mod.
-				}
-
 				PrioritizeInfernumMusic: {
 					Label: Prioritize Infernum Mod Music
 					Tooltip:
@@ -115,8 +85,6 @@ Mods: {
 			BloodMoonMusicBox: {
 				DisplayName: Music Box (Blood Moon)
 				Tooltip: Plays 'Congealing Shadows' by Thriplerex
-				DisplayNameAlt: Music Box (Blood Moon Alt)
-				TooltipAlt: Plays 'Clotted Darkness' by CDMusic
 			}
 
 			BrainofCthulhuMusicBox: {
@@ -142,8 +110,6 @@ Mods: {
 			CrimsonMusicBox: {
 				DisplayName: Music Box (Crimson)
 				Tooltip: Plays 'Clotted Lands' by SkippyZii
-				DisplayNameAlt: Music Box (Crimson Alt)
-				TooltipAlt: Plays 'Hemorrhage' by CDMusic
 			}
 
 			CrimsonUndergroundMusicBox: {
@@ -169,8 +135,6 @@ Mods: {
 			EyeofCthulhuMusicBox: {
 				DisplayName: Music Box (Eye of Cthulhu)
 				Tooltip: Plays 'Bloodshot Barrage' by Heart Plus Up! and novaGnomes
-				DisplayNameAlt: Music Box (Eye of Cthulhu Alt)
-				TooltipAlt: Plays 'Through Evil's Eye' by CDMusic
 			}
 
 			FalseEpilogueMusicBox: {
@@ -221,8 +185,6 @@ Mods: {
 			KingSlimeMusicBox: {
 				DisplayName: Music Box (King Slime)
 				Tooltip: Plays 'Gelatinous Monarch' by Heart Plus Up!
-				DisplayNameAlt: Music Box (King Slime Alt)
-				TooltipAlt: Plays 'Battle of the Bouncy' by CDMusic
 			}
 
 			LanternFestivalMusicBox: {
@@ -262,8 +224,6 @@ Mods: {
 			RainMusicBox: {
 				DisplayName: Music Box (Rain)
 				Tooltip: Plays 'downpour' by Heart Plus Up!
-				DisplayNameAlt: Music Box (Rain Alt)
-				TooltipAlt: Plays 'sky fall' by CDMusic
 			}
 
 			SkeletronMusicBox: {
@@ -356,12 +316,6 @@ Mods: {
 			MusicDisplay: {
 				SongNames: {
 					AbyssLayer3Alt: R'lyehian Depths
-					DestroyerAlt: Behemoth From Beneath
-					EyeofCthulhuAlt: Through Evil's Eye
-					KingSlimeAlt: Battle of the Bouncy
-					BloodMoonAlt: Clotted Darkness
-					CrimsonAlt: Hemorrhage
-					RainAlt: sky fall
 					Space: Starry Ascent
 					Underworld: Descent Into Hell's Fury
 					Meteorite: The Abomination's Omen
@@ -410,7 +364,6 @@ Mods: {
 				}
 
 				Authors: {
-					CDMusic: by CDMusic
 					HeartPlusUp: by Heart Plus Up!
 					HeartPlusUpFeature1: by Heart Plus Up! and novaGnomes
 					HeartPlusUpFeature2: by Heart Plus Up! and SkippyZii

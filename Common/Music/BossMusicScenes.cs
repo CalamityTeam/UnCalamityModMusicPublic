@@ -176,7 +176,7 @@ namespace UnCalamityModMusic.Common.Music
 	}
 	public class Destroyer : ModSceneEffect
 	{
-		public override int Music => ModContent.GetInstance<MusicConfig>().DestroyerAltTheme ? MusicPathing.GetMusicSlot("DestroyerAlt") : InfernumCompatibility.DecideOnMusicPath("Destroyer", "MechBosses");
+		public override int Music => InfernumCompatibility.DecideOnMusicPath("Destroyer", "MechBosses");
 
 		public override SceneEffectPriority Priority => InfernumCompatibility.DecideOnScenePriority(SceneEffectPriority.BossLow);
 
@@ -296,7 +296,7 @@ namespace UnCalamityModMusic.Common.Music
 	}
 	public class EyeofCthulhu : ModSceneEffect
 	{
-		public override int Music => ModContent.GetInstance<MusicConfig>().EyeofCthulhuAltTheme ? MusicPathing.GetMusicSlot("EyeofCthulhuAlt") : InfernumCompatibility.DecideOnMusicPath("EyeofCthulhu", "EyeOfCthulhu");
+		public override int Music => InfernumCompatibility.DecideOnMusicPath("EyeofCthulhu", "EyeOfCthulhu");
 
 		public override SceneEffectPriority Priority => InfernumCompatibility.DecideOnScenePriority(SceneEffectPriority.BossLow);
 
@@ -307,7 +307,7 @@ namespace UnCalamityModMusic.Common.Music
 	}
 	public class KingSlime : ModSceneEffect
 	{
-		public override int Music => ModContent.GetInstance<MusicConfig>().KingSlimeAltTheme ? MusicPathing.GetMusicSlot("KingSlimeAlt") : InfernumCompatibility.DecideOnMusicPath("KingSlime", "KingSlime");
+		public override int Music => InfernumCompatibility.DecideOnMusicPath("KingSlime", "KingSlime");
 
 		public override SceneEffectPriority Priority => InfernumCompatibility.DecideOnScenePriority(SceneEffectPriority.BossLow);
 

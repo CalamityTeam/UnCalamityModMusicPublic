@@ -1,9 +1,6 @@
-Vanilla Calamity Mod Music is an in-progress music mod that aims to replace the entire vanilla soundtrack with new songs made in the context of the Calamity Mod OST.
+This mod adds replacement Calamity songs for the vanilla Terraria soundtrack and music boxes for each song replaced.
 
--= Credits =-
+It is intended to be used alongside the Calamity Mod, but can be used alone.
 
-Music: Heart Plus Up!, SkippyZii, Salvati, Thriplerex, CDMusic, psykomatic, & novaGnomes
-
-Sprites: Heart Plus Up!, LordMetarex, Seasalt, toothbrush, IbanPlay, Cooper, & PokerFace
-
-Programming: apotofkoolaid
+PLEASE NOTE THAT THIS MOD DOES NOT ADD ANY CALAMITY GAME CONTENT.
+You need to install the Calamity Mod for items, bosses, and so on.

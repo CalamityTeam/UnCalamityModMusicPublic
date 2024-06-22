@@ -208,7 +208,7 @@ namespace UnCalamityModMusic.Common.Music
 	}
 	public class BloodMoon : ModSceneEffect
 	{
-		public override int Music => ModContent.GetInstance<MusicConfig>().BloodMoonAltTheme ? MusicPathing.GetMusicSlot("BloodMoonAlt") : (PlayerFlags.deathMode ? MusicPathing.GetMusicSlot("BloodMoonDeath") : MusicPathing.GetMusicSlot("BloodMoon"));
+		public override int Music => PlayerFlags.deathMode ? MusicPathing.GetMusicSlot("BloodMoonDeath") : MusicPathing.GetMusicSlot("BloodMoon");
 
 		public override SceneEffectPriority Priority => SceneEffectPriority.Environment;
 
@@ -284,7 +284,7 @@ namespace UnCalamityModMusic.Common.Music
 	}
 	public class Rain : ModSceneEffect
 	{
-		public override int Music => ModContent.GetInstance<MusicConfig>().RainAltTheme ? MusicPathing.GetMusicSlot("RainAlt") : MusicPathing.GetMusicSlot("Rain");
+		public override int Music => MusicPathing.GetMusicSlot("Rain");
 
 		public override SceneEffectPriority Priority => SceneEffectPriority.BiomeMedium;
 
