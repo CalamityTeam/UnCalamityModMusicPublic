@@ -1,5 +1,5 @@
 ﻿[h1]Vanilla Calamity Mod Music[/h1]
-[url=https://discord.com/invite/2jaEwNJm9e]Discord[/url] [url=https://terrariamods.wiki.gg/wiki/Vanilla_Calamity_Mod_Music]Official Wiki[/url]
+[url=https://discord.gg/2jaEwNJm9e]Discord[/url] [url=https://terrariamods.wiki.gg/wiki/Vanilla_Calamity_Mod_Music]Official Wiki[/url]
 
 [b]Vanilla Calamity Music Mod (aka VCMM) is an in-progress music expansion for Calamity.[/b] It aims to replace the entire vanilla Terraria soundtrack with new songs made in the context of the Calamity Mod OST.
 
@@ -9,87 +9,53 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2824688266
 For Calamity game content, e.g. items and bosses, subscribe to the main Calamity Mod:
 https://steamcommunity.com/sharedfiles/filedetails/?id=2824688072
 
-[b]If you find any issues with this mod, its Discord server is the best place to find help.[/b]
+[b]Be sure to join our music Discord server linked above to keep up with the latest news about upcoming updates and songs.[/b]
 
 [hr]
 
-Current list of tracks:
+Full list of tracks:
 [olist]
-[b]Environments[/b]
-[*] Forest Day - A Legend's Strife
-[*] Forest Night - Laze of the Sky
-[*] Town Day - Haven in the Sunlight
-[*] Town Night - Moonlit Haven
-[*] Underground - Under the Earth
-[*] Caverns - Nearing the Inferno
-[*] Marble & Granite Caves - Amidst the Minerals
-[*] Glowing Mushroom Fields - Psychedelic Depths
-[*] Tundra - Frozen Over
-[*] Underground Tundra - Inside the Glaciers
-[*] Desert - Scorched to Dust
-[*] Ocean Day - shoreline
-[*] Ocean Night - serene tides
-[*] Corruption - Writhing Shadows
-[*] Underground Corruption - Between the Shadows
-[*] Crimson - Clotted Lands
-[*] Underground Crimson - Bloodstained Terror
-[*] Space - Starry Acsent
-[*] Meteorite - The Abomination's Omen
-[*] Dungeon - Chambers of the Tyrant
-[*] Underworld - Descent Into Hell's Fury
-[*] Workshop Tier 1 - Metal, Wood, and Fire
-[*] Workshop Tier 2 - The Sky and the Depths
-[*] Workshop Tier 3 - Mythic Metals and Enchanted Fires
-[*] Workshop Tier 4 - Fruits of Your Labor
-[*] Workshop Tier 5 - False Gods and Ancient Elements
-[*] Workshop Tier 6 - Master's Forge
-
-[b]Bosses[/b]
-[*] King Slime - Gelatinous Monarch
-[*] Eye of Cthulhu - Bloodshot Barrage
-[*] Eater of Worlds - Menace of the Chasms
-[*] Brain of Cthulhu - Madness Incarnate
-[*] Skeletron - Wrath From the Crypt
-[*] Wall of Flesh - Fated Insurrection
-[*] Moon Lord - Virtuous Radiance
-
-[b]Events[/b]
-[*] Rain - downpour
-[*] Lantern Festival - Serenity
-[*] Slime Rain - Gelatin Showers
-[*] Blood Moon - Congealing Shadows
-[*] Blood Moon Death Mode - Sanguine Eclipse
-
-[b]Other[/b]
-[*] Hardmode Interlude - The Resurrection of a Cruel World
-[*] False Epilogue - The Memory of a Cruel World
-[*] Rain Legacy - Grey Sky
-
-[b]Alternate Themes[/b]
-[*] Deep Abyss Alt - R'lyehian Depths
+[*] Heart Plus Up! - A Legend's Strife (split into four songs)
+[*] Heart Plus Up! - Laze of the Sky
+[*] Heart Plus Up! - Under the Earth
+[*] Heart Plus Up! - Amidst the Minerals
+[*] Heart Plus Up! - Nearing the Inferno
+[*] Heart Plus Up! - downpour
+[*] Heart Plus Up! - ~Metal, Wood, and Fire~
+[*] Heart Plus Up! - Haven in the Sunlight
+[*] Heart Plus Up! - Moonlit Haven
+[*] Heart Plus Up! - Gelatin Showers
+[*] Heart Plus Up! - Gelatinous Monarch
+[*] Heart Plus Up! - Serenity
+[*] Heart Plus Up! - Scorched to Dust
+[*] Heart Plus Up! - Frozen Over
+[*] Heart Plus Up! - Inside the Glaciers
+[*] Thriplerex - Congealing Shadows
+[*] Thriplerex - Sanguine Eclipse
+[*] Heart Plus Up! ft. novaGnomes - Bloodshot Barrage
+[*] Heart Plus Up! - shoreline
+[*] Heart Plus Up! - serene tides
+[*] Heart Plus Up! - Psychedelic Depths
+[*] Heart Plus Up! - Starry Ascent
+[*] Heart Plus Up! - Descent Into Hell's Fury
+[*] Heart Plus Up! - ~The Sky and the Depths~
+[*] Heart Plus Up! - Writhing Shadows
+[*] Heart Plus Up! - Between the Shadows
+[*] Heart Plus Up! - Menace of the Chasms
+[*] SkippyZii - Clotted Lands
+[*] SkippyZii - Inside the Beast
+[*] SkippyZii ft. Heart Plus Up! - Madness Incarnate
+[*] Heart Plus Up! - The Abomination's Omen
+[*] Heart Plus Up! - Wrath From the Crypt
+[*] Heart Plus Up! - Chambers of the Tyrant
+[*] Heart Plus Up! - Fated Insurrection
+[*] Salvati - The Resurrection of a Cruel World
+[*] Heart Plus Up! - ~Mythic Metals and Enchanted Fires~
+[*] Heart Plus Up! - ~Fruits of Your Labor~
+[*] Heart Plus Up! - R'lyehian Depths
+[*] psykomatic - Virtuous Radiance
+[*] Heart Plus Up! - The Memory of a Cruel World
+[*] Heart Plus Up! - ~False Gods and Ancient Elements~
+[*] Heart Plus Up! - Grey Sky
+[*] Heart Plus Up! - ~Master's Forge~
 [/olist]
-
-[hr]
-
-[b]Credits:[/b]
-[list]
-[b]Music[/b]
-[*] Heart Plus Up!
-[*] SkippyZii
-[*] Salvati
-[*] Thriplerex
-[*] psykomatic
-[*] novaGnomes
-
-[b]Sprites[/b]
-[*] Heart Plus Up!
-[*] LordMetarex
-[*] Seasalt
-[*] toothbrush
-[*] IbanPlay
-[*] Cooper
-[*] PokerFace
-
-[b]Programming[/b]
-[*] apotofkoolaid
-[/list]
