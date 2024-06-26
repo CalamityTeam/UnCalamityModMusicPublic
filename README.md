@@ -1,5 +1,5 @@
 # Vanilla Calamity Music Mod
-[![Discord](https://img.shields.io/discord/225030931008847874)](https://discord.gg/vVkmfJVY8W)
+[![Discord](https://img.shields.io/discord/225030931008847874)](https://discord.gg/2jaEwNJm9e)
 - [Official site](https://calamitymod.com/)
 - [Steam Workshop](https://calamitymod.com/downloadvanillamusic/)
 - [Discord](https://discord.gg/2jaEwNJm9e)
