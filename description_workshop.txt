@@ -1,13 +1,13 @@
 ﻿[h1]Vanilla Calamity Mod Music[/h1]
 [url=https://discord.gg/2jaEwNJm9e]Discord[/url] [url=https://terrariamods.wiki.gg/wiki/Vanilla_Calamity_Mod_Music]Official Wiki[/url]
 
-[b]Vanilla Calamity Music Mod (aka VCMM) is an in-progress music expansion for Calamity.[/b] It aims to replace the entire vanilla Terraria soundtrack with new songs made in the context of the Calamity Mod OST.
+[b]Vanilla Calamity Music Mod (aka VCMM) is an in-progress music expansion for Calamity.[/b] It aims to replace the entire vanilla Terraria soundtrack with new songs made in the context of the Calamity soundtrack. It is intended to be used alongside the Calamity Mod, but can be used alone.
 
-For the main Calamity soundtrack used for Calamity bosses, biomes and events, subscribe to the primary music mod:
-https://steamcommunity.com/sharedfiles/filedetails/?id=2824688266
-
-For Calamity game content, e.g. items and bosses, subscribe to the main Calamity Mod:
+[i]For Calamity game content, e.g. items and bosses, subscribe to the main mod:[/i]
 https://steamcommunity.com/sharedfiles/filedetails/?id=2824688072
+
+[i]For the main Calamity soundtrack used for Calamity bosses, biomes and events, subscribe to the primary music mod:[/i]
+https://steamcommunity.com/sharedfiles/filedetails/?id=2824688266
 
 [b]Be sure to join our music Discord server linked above to keep up with the latest news about upcoming updates and songs.[/b]
 
