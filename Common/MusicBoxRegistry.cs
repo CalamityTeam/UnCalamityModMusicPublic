@@ -41,6 +41,7 @@ namespace UnCalamityModMusic.Common
                 AddMusicBox("GlowingMushroomFields", ModContent.ItemType<Content.Items.GlowingMushroomFieldsMusicBox>(), ModContent.TileType<Content.Tiles.GlowingMushroomFieldsMusicBox>());
                 AddMusicBox("Corruption", ModContent.ItemType<Content.Items.CorruptionMusicBox>(), ModContent.TileType<Content.Tiles.CorruptionMusicBox>());
                 AddMusicBox("CorruptionUnderground", ModContent.ItemType<Content.Items.CorruptionUndergroundMusicBox>(), ModContent.TileType<Content.Tiles.CorruptionUndergroundMusicBox>());
+                AddMusicBox("Crimson", ModContent.ItemType<Content.Items.CrimsonMusicBox>(), ModContent.TileType<Content.Tiles.CrimsonMusicBox>());
                 AddMusicBox("CrimsonUnderground", ModContent.ItemType<Content.Items.CrimsonUndergroundMusicBox>(), ModContent.TileType<Content.Tiles.CrimsonUndergroundMusicBox>());
                 AddMusicBox("Geodes", ModContent.ItemType<Content.Items.GeodesMusicBox>(), ModContent.TileType<Content.Tiles.GeodesMusicBox>());
                 AddMusicBox("Tundra", ModContent.ItemType<Content.Items.TundraMusicBox>(), ModContent.TileType<Content.Tiles.TundraMusicBox>());
@@ -74,12 +75,15 @@ namespace UnCalamityModMusic.Common
                 //AddMusicBox("MechanicalTrio", ModContent.ItemType<Content.Items.MechanicalTrioMusicBox>(), ModContent.TileType<Content.Tiles.MechanicalTrioMusicBox>());
                 //AddMusicBox("SkeletronPrime", ModContent.ItemType<Content.Items.SkeletronPrimeMusicBox>(), ModContent.TileType<Content.Tiles.SkeletronPrimeMusicBox>());
                 //AddMusicBox("Twins", ModContent.ItemType<Content.Items.TwinsMusicBox>(), ModContent.TileType<Content.Tiles.TwinsMusicBox>());
+                //AddMusicBox("Destroyer", ModContent.ItemType<Content.Items.DestroyerMusicBox>(), ModContent.TileType<Content.Tiles.DestroyerMusicBox>());
                 //AddMusicBox("QueenSlime", ModContent.ItemType<Content.Items.QueenSlimeMusicBox>(), ModContent.TileType<Content.Tiles.QueenSlimeMusicBox>());
                 AddMusicBox("WallofFlesh", ModContent.ItemType<Content.Items.WallofFleshMusicBox>(), ModContent.TileType<Content.Tiles.WallofFleshMusicBox>());
                 AddMusicBox("Skeletron", ModContent.ItemType<Content.Items.SkeletronMusicBox>(), ModContent.TileType<Content.Tiles.SkeletronMusicBox>());
                 //AddMusicBox("QueenBee", ModContent.ItemType<Content.Items.QueenBeeMusicBox>(), ModContent.TileType<Content.Tiles.QueenBeeMusicBox>());
                 AddMusicBox("BrainofCthulhu", ModContent.ItemType<Content.Items.BrainofCthulhuMusicBox>(), ModContent.TileType<Content.Tiles.BrainofCthulhuMusicBox>());
                 AddMusicBox("EaterofWorlds", ModContent.ItemType<Content.Items.EaterofWorldsMusicBox>(), ModContent.TileType<Content.Tiles.EaterofWorldsMusicBox>());
+                AddMusicBox("EyeofCthulhu", ModContent.ItemType<Content.Items.EyeofCthulhuMusicBox>(), ModContent.TileType<Content.Tiles.EyeofCthulhuMusicBox>());
+                AddMusicBox("KingSlime", ModContent.ItemType<Content.Items.KingSlimeMusicBox>(), ModContent.TileType<Content.Tiles.KingSlimeMusicBox>());
 
                 //Events
                 //AddMusicBox("FrostMoon", ModContent.ItemType<Content.Items.FrostMoonMusicBox>(), ModContent.TileType<Content.Tiles.FrostMoonMusicBox>());
@@ -94,10 +98,12 @@ namespace UnCalamityModMusic.Common
                 //AddMusicBox("GoblinArmy", ModContent.ItemType<Content.Items.GoblinArmyMusicBox>(), ModContent.TileType<Content.Tiles.GoblinArmyMusicBox>());
                 //AddMusicBox("SolarEclipse", ModContent.ItemType<Content.Items.SolarEclipseMusicBox>(), ModContent.TileType<Content.Tiles.SolarEclipseMusicBox>());
                 AddMusicBox("BloodMoonDeath", ModContent.ItemType<Content.Items.BloodMoonDeathMusicBox>(), ModContent.TileType<Content.Tiles.BloodMoonDeathMusicBox>());
+                AddMusicBox("BloodMoon", ModContent.ItemType<Content.Items.BloodMoonMusicBox>(), ModContent.TileType<Content.Tiles.BloodMoonMusicBox>());
                 AddMusicBox("SlimeRain", ModContent.ItemType<Content.Items.SlimeRainMusicBox>(), ModContent.TileType<Content.Tiles.SlimeRainMusicBox>());
                 //AddMusicBox("Blizzard", ModContent.ItemType<Content.Items.BlizzardMusicBox>(), ModContent.TileType<Content.Tiles.BlizzardMusicBox>());
                 //AddMusicBox("Sandstorm", ModContent.ItemType<Content.Items.SandstormMusicBox>(), ModContent.TileType<Content.Tiles.SandstormMusicBox>());
                 //AddMusicBox("Thunderstorm", ModContent.ItemType<Content.Items.ThunderstormMusicBox>(), ModContent.TileType<Content.Tiles.ThunderstormMusicBox>());
+                AddMusicBox("Rain", ModContent.ItemType<Content.Items.RainMusicBox>(), ModContent.TileType<Content.Tiles.RainMusicBox>());
                 //AddMusicBox("WindyDay", ModContent.ItemType<Content.Items.WindyDayMusicBox>(), ModContent.TileType<Content.Tiles.WindyDayMusicBox>());
                 AddMusicBox("LanternFestival", ModContent.ItemType<Content.Items.LanternFestivalMusicBox>(), ModContent.TileType<Content.Tiles.LanternFestivalMusicBox>());
 
