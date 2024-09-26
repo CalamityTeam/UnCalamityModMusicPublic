@@ -11,7 +11,9 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.BloodMoonDeathMusicBox>();
 
-		public override void AddRecipes()
+        public override string MusicFilePath => "BloodMoonDeath";
+
+        public override void MusicBoxRecipe()
 		{
 			var calamityMod = ModLoader.TryGetMod("CalamityMod", out Mod calamity);
 			
@@ -37,7 +39,8 @@ namespace UnCalamityModMusic.Content.Items
 				Recipe.Create(Type, 1)
 					.AddRecipeGroup("VCMM:EvilPowderGroup", 10)
 					.AddIngredient(ItemID.Deathweed, 3)
-					.AddIngredient(ItemID.MusicBox, 1)
+                    .AddIngredient(ItemID.BloodMoonStarter, 1)
+                    .AddIngredient(ItemID.MusicBox, 1)
 					.AddTile(Recipes.musicBoxCraftingStation)
 					.Register();
 			}

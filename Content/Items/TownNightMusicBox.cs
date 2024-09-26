@@ -1,5 +1,4 @@
 using Terraria;
-using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using UnCalamityModMusic.Common;
@@ -10,7 +9,9 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.TownNightMusicBox>();
 
-		public override void AddRecipes()
+        public override string MusicFilePath => "TownNight";
+
+        public override void MusicBoxRecipe()
 		{
 			Recipe.Create(Type, 1)
 				.AddRecipeGroup(RecipeGroupID.Wood, 10)
@@ -19,21 +20,6 @@ namespace UnCalamityModMusic.Content.Items
 				.AddIngredient(ItemID.MusicBox, 1)
 				.AddTile(Recipes.musicBoxCraftingStation)
 				.Register();
-		}
-
-		public class TownNightNoiselessRecording : GlobalItem
-		{
-			public override void UpdateAccessory(Item item, Player player, bool hideVisual)
-			{
-				if (item.type == ItemID.MusicBox && Main.curMusic == MusicPathing.GetMusicSlot("TownNight_Noiseless"))
-				{
-					if (Main.rand.NextBool(150))
-					{
-						SoundEngine.PlaySound(SoundID.Item166);
-						item.SetDefaults(ModContent.ItemType<TownNightMusicBox>());
-					}
-				}
-			}
 		}
 	}
 }

@@ -1,6 +1,8 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using Terraria;
 using Terraria.GameContent.Events;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace UnCalamityModMusic.Common
@@ -11,7 +13,8 @@ namespace UnCalamityModMusic.Common
 		public static bool onRemixedSurface;
 		public static bool inSpace;
 		public static bool inTown;
-		public static bool inUgTown;
+        public static bool inTownWithRain;
+        public static bool inUgTown;
 		public static bool isRaining;
 		public static bool notRaining;
 		public static bool largeWorld;
@@ -25,12 +28,12 @@ namespace UnCalamityModMusic.Common
 		public static bool TownSceneActive;
 		public static bool WorkshopSceneActive;
 
-		public static bool infernumMode;
+        public static bool infernumMode;
 		public static bool deathMode;
 		public static bool revengeanceMode;
 		public static bool bossRushActive;
 
-		public static bool ZoneBrimstoneCrags;
+        public static bool ZoneBrimstoneCrags;
 		public static bool ZoneProfanedTemple;
 		public static bool ZoneAstralInfection;
 		public static bool ZoneSulfurSea;
@@ -77,7 +80,9 @@ namespace UnCalamityModMusic.Common
 		public static bool ZoneMarbleCave;
 		public static bool ZoneHive;
 
-		public static float MusicTileRange = 525f * 16f;
+        public static bool CalamityMusicEventInactive = true;
+
+        public static float MusicTileRange = 525f * 16f;
 
 		public override void PreUpdate()
 		{
@@ -105,8 +110,8 @@ namespace UnCalamityModMusic.Common
 			ugDesertOriginalHeight = (double)player.position.Y >= Main.worldSurface * 16.0 + (double)(Main.screenHeight / 2);
 			ZoneSandstorm = Sandstorm.Happening && player.ZoneDesert && !player.ZoneBeach;
 			ZoneOverworldHeightExtra = (!player.ZoneDesert && player.ZoneOverworldHeight) || (player.ZoneDesert && !ugDesertOriginalHeight);
-			TownSceneActive = ModContent.GetInstance<Music.TownDay>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.TownNight>().IsSceneEffectActive(player);
-			WorkshopSceneActive = ModContent.GetInstance<Music.WorkshopTier1>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.WorkshopTier2>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.WorkshopTier3>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.WorkshopTier4>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.WorkshopTier5>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.WorkshopTier6>().IsSceneEffectActive(player);
+			TownSceneActive = ModContent.GetInstance<Music.TownDay>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.TownNight>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.TownRain>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.TownParty>().IsSceneEffectActive(player);
+            WorkshopSceneActive = ModContent.GetInstance<Music.WorkshopTier1>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.WorkshopTier2>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.WorkshopTier3>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.WorkshopTier4>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.WorkshopTier5>().IsSceneEffectActive(player) || ModContent.GetInstance<Music.WorkshopTier6>().IsSceneEffectActive(player);
 
 			WorkshopTier6Bosses = downedExoMechs || downedSupremeCalamitas;
 			WorkshopTier5Bosses = NPC.downedMoonlord || downedProfanedGuardians || downedDragonfolly || downedProvidence || downedCeaselessVoid || downedStormWeaver || downedSignus || downedPolterghast || downedOldDuke || downedDevourerofGods || downedYharon;
@@ -117,12 +122,23 @@ namespace UnCalamityModMusic.Common
 			if (noTownMusic)
 			{
 				inTown = false;
+				inTownWithRain = false;
 				inUgTown = false;
 			}
 			else
 			{
-				inTown = player.townNPCs > 2f && (((notRaining && player.ZoneOverworldHeight) && (notInExcludedTownEvent && player.ZoneOverworldHeight)) || inSpace);
-				inUgTown = player.townNPCs > 2f && (player.ZoneDirtLayerHeight || player.ZoneRockLayerHeight || player.ZoneUnderworldHeight);
+				if (player.ZoneShadowCandle || player.inventory[player.selectedItem].type == ItemID.ShadowCandle)
+				{
+					inTown = false;
+					inTownWithRain = false;
+					inUgTown = false;
+				}
+				else
+				{
+					inTown = player.townNPCs > 2f && ((notRaining && notInExcludedTownEvent && player.ZoneOverworldHeight) || inSpace);
+					inTownWithRain = player.townNPCs > 2f && isRaining && notInExcludedTownEvent && ZoneOverworldHeightExtra;
+					inUgTown = player.townNPCs > 2f && (player.ZoneDirtLayerHeight || player.ZoneRockLayerHeight || player.ZoneUnderworldHeight);
+				}
 			}
 
 			if (calamityMod)
@@ -153,7 +169,7 @@ namespace UnCalamityModMusic.Common
 				downedPlaguebringerGoliath = (bool)calamity.Call("GetBossDowned", "plaguebringergoliath");
 				downedAstrumAureus = (bool)calamity.Call("GetBossDowned", "astrumaureus");
 				downedLeviathan = (bool)calamity.Call("GetBossDowned", "anahitaleviathan");
-				downedCalamitasClone = (bool)calamity.Call("GetBossDowned", "calamitas");
+				downedCalamitasClone = (bool)calamity.Call("GetBossDowned", "calamitasclone");
 				downedBrimstoneElemental = (bool)calamity.Call("GetBossDowned", "brimstoneelemental");
 				downedAquaticScourge = (bool)calamity.Call("GetBossDowned", "aquaticscourge");
 				downedCryogen = (bool)calamity.Call("GetBossDowned", "cryogen");
@@ -164,7 +180,9 @@ namespace UnCalamityModMusic.Common
 				deathMode = (bool)calamity.Call("DifficultyActive", "death");
 				revengeanceMode = (bool)calamity.Call("DifficultyActive", "revengeance");
 				bossRushActive = (bool)calamity.Call("DifficultyActive", "bossrush");
-			}
+
+                CalamityMusicEventInactive = CalamityMusicEvent() == null;
+            }
 
 			if (infernumMod)
 			{
@@ -193,5 +211,23 @@ namespace UnCalamityModMusic.Common
 
 			return false;
 		}
+
+		public static DateTime? CalamityMusicEvent()
+		{
+            if (ModLoader.TryGetMod("CalamityMod", out Mod calamity))
+            {
+                Type musicEventType = calamity.GetType().Assembly.GetType("CalamityMod.Systems.MusicEventSystem");
+
+                if (musicEventType != null)
+                {
+                    PropertyInfo trackStartProperty = musicEventType.GetProperty("TrackStart", BindingFlags.Static | BindingFlags.Public);
+                    DateTime? trackStartValue = trackStartProperty.GetValue(null) as DateTime?;
+
+                    return trackStartValue;
+                }
+            }
+
+            return null;
+        }
 	}
 }

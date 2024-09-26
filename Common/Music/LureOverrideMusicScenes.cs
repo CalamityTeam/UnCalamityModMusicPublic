@@ -16,7 +16,7 @@ namespace UnCalamityModMusic.Common.Music
 
         public override bool IsSceneEffectActive(Player player)
         {
-            return IsAnahitaLureActive() && ModContent.GetInstance<MusicConfig>().OverrideAnahitasLureTheme;
+            return IsAnahitaLureActive() && ModContent.GetInstance<MusicConfig>().OverrideAnahitasLure;
         }
 
         public static bool IsAnahitaLureActive()

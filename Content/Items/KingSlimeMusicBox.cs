@@ -9,7 +9,9 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.KingSlimeMusicBox>();
 
-		public override void AddRecipes()
+        public override string MusicFilePath => "KingSlime";
+
+        public override void MusicBoxRecipe()
 		{
 			Recipe.Create(Type, 1)
 				.AddIngredient(ItemID.KingSlimeTrophy, 1)

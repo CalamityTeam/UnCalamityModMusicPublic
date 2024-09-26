@@ -9,7 +9,9 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.MeteoriteMusicBox>();
 
-		public override void AddRecipes()
+        public override string MusicFilePath => "Meteorite";
+
+        public override void MusicBoxRecipe()
 		{
 			Recipe.Create(Type, 1)
 				.AddIngredient(ItemID.Meteorite, 10)

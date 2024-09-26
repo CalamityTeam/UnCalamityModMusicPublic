@@ -9,7 +9,9 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.TundraUndergroundMusicBox>();
 
-		public override void AddRecipes()
+        public override string MusicFilePath => "TundraUnderground";
+
+        public override void MusicBoxRecipe()
 		{
 			Recipe.Create(Type, 1)
 				.AddIngredient(ItemID.IceBlock, 10)

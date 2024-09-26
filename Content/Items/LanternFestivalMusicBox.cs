@@ -9,7 +9,9 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.LanternFestivalMusicBox>();
 
-		public override void AddRecipes()
+        public override string MusicFilePath => "LanternFestival";
+
+        public override void MusicBoxRecipe()
 		{
 			Recipe.Create(Type, 1)
 				.AddRecipeGroup(RecipeGroupID.Wood, 10)

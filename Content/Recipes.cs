@@ -2,14 +2,16 @@
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using UnCalamityModMusic.Common.Configs;
 
 namespace UnCalamityModMusic.Content
 {
 	public class Recipes : ModSystem
 	{
 		public static int musicBoxCraftingStation = TileID.HeavyWorkBench;
+        public static int musicBoxCraftingStationVanilla = TileID.TinkerersWorkbench;
 
-		public static RecipeGroup CopperOreGroup;
+        public static RecipeGroup CopperOreGroup;
 		public static RecipeGroup GoldOreGroup;
 		public static RecipeGroup CobaltOreGroup;
 		public static RecipeGroup CopperBarGroup;
@@ -18,8 +20,9 @@ namespace UnCalamityModMusic.Content
 		public static RecipeGroup AdamantiteBarGroup;
 		public static RecipeGroup EvilPowderGroup;
 		public static RecipeGroup TombstoneGroup;
+        public static RecipeGroup SillyTiedBalloonGroup;
 
-		public override void Unload()
+        public override void Unload()
 		{
 			CopperOreGroup = null;
 			GoldOreGroup = null;
@@ -30,6 +33,7 @@ namespace UnCalamityModMusic.Content
 			AdamantiteBarGroup = null;
 			EvilPowderGroup = null;
 			TombstoneGroup = null;
+            SillyTiedBalloonGroup = null;
 		}
 
 		public override void AddRecipeGroups()
@@ -96,15 +100,26 @@ namespace UnCalamityModMusic.Content
 				ItemID.Tombstone, ItemID.GraveMarker, ItemID.CrossGraveMarker, ItemID.Headstone, ItemID.Gravestone, ItemID.Obelisk, ItemID.RichGravestone1, ItemID.RichGravestone2, ItemID.RichGravestone3, ItemID.RichGravestone4, ItemID.RichGravestone5
 			);
 			RecipeGroup.RegisterGroup("VCMM:TombstoneGroup", TombstoneGroup);
-		}
+
+            SillyTiedBalloonGroup = new RecipeGroup
+            (
+                () => $"{Language.GetTextValue("LegacyMisc.37")} {Language.GetTextValue("Mods.UnCalamityModMusic.Recipes.SillyTiedBalloon")}",
+                ItemID.SillyBalloonTiedPink, ItemID.SillyBalloonTiedPurple, ItemID.SillyBalloonTiedGreen
+            );
+            RecipeGroup.RegisterGroup("VCMM:SillyTiedBalloonGroup", SillyTiedBalloonGroup);
+        }
 
 		public override void AddRecipes()
 		{
 			var calamityMod = ModLoader.TryGetMod("CalamityMod", out Mod calamity);
 			var calamityModMusic = ModLoader.TryGetMod("CalamityModMusic", out Mod cmusic);
-			var otherCalamityModMusic = ModLoader.TryGetMod("OtherCalamityModMusic", out Mod othermusic);
 			var calamityVanities = ModLoader.TryGetMod("CalValEX", out Mod calval);
 			var catalystMod = ModLoader.TryGetMod("CatalystMod", out Mod catalyst);
+
+			if (!ModContent.GetInstance<OtherConfig>().MusicBoxRecipes)
+			{
+				return;
+			}
 
 			//Empty Music Box
 			Recipe.Create(ItemID.MusicBox, 1)
@@ -161,23 +176,11 @@ namespace UnCalamityModMusic.Content
 					{
 						recipeFinder.DisableRecipe();
 					}
-					if (recipeFinder.HasResult(cmusic.Find<ModItem>("AdultEidolonWyrmMusicBox")))
-					{
-						recipeFinder.DisableRecipe();
-					}
 					if (recipeFinder.HasResult(cmusic.Find<ModItem>("CalamitasDefeatMusicBox")))
 					{
 						recipeFinder.DisableRecipe();
 					}
-					if (recipeFinder.HasResult(cmusic.Find<ModItem>("CalamityTitleMusicBox")))
-					{
-						recipeFinder.DisableRecipe();
-					}
-					if (recipeFinder.HasResult(cmusic.Find<ModItem>("YharonLegacyMusicBox")))
-					{
-						recipeFinder.DisableRecipe();
-					}
-				}
+                }
 			}
 
 			if (calamityModMusic && calamityMod)
@@ -283,20 +286,6 @@ namespace UnCalamityModMusic.Content
 						.AddIngredient(calamity, "Acidwood", 10)
 						.AddIngredient(calamity, "CorrodedFossil", 10)
 						.AddIngredient(calamity, "NuclearTerrorTrophy", 1)
-						.AddIngredient(ItemID.MusicBox, 1)
-						.AddTile(musicBoxCraftingStation)
-						.Register();
-				}
-				catch
-				{
-					UnCalamityModMusic.Instance.Logger.Debug(Language.GetTextValue("Mods.UnCalamityModMusic.Recipes.NameMismatchError"));
-				}
-
-				//Adult Eidolon Wyrm
-				try
-				{
-					Recipe.Create(cmusic.Find<ModItem>("AdultEidolonWyrmMusicBox").Type, 1)
-						.AddIngredient(calamity, "HalibutCannon", 1)
 						.AddIngredient(ItemID.MusicBox, 1)
 						.AddTile(musicBoxCraftingStation)
 						.Register();
@@ -558,7 +547,7 @@ namespace UnCalamityModMusic.Content
 				try
 				{
 					Recipe.Create(cmusic.Find<ModItem>("BossRushTier5MusicBox").Type, 1)
-						.AddIngredient(calamity, "Rock", 1)
+						.AddIngredient(calamity, "SupremeCalamitasTrophy", 1)
 						.AddIngredient(calamity, "ShadowspecBar", 3)
 						.AddIngredient(ItemID.MusicBox, 1)
 						.AddTile(musicBoxCraftingStation)
@@ -780,22 +769,6 @@ namespace UnCalamityModMusic.Content
 				{
 					Recipe.Create(cmusic.Find<ModItem>("CalamitasPhase3MusicBox").Type, 1)
 						.AddIngredient(calamity, "SupremeCatastropheTrophy", 1)
-						.AddIngredient(ItemID.MusicBox, 1)
-						.AddTile(musicBoxCraftingStation)
-						.Register();
-				}
-				catch
-				{
-					UnCalamityModMusic.Instance.Logger.Debug(Language.GetTextValue("Mods.UnCalamityModMusic.Recipes.NameMismatchError"));
-				}
-
-				//Calamity Title
-				try
-				{
-					Recipe.Create(cmusic.Find<ModItem>("CalamityTitleMusicBox").Type, 1)
-						.AddIngredient(calamity, "EssenceofHavoc", 10)
-						.AddIngredient(calamity, "BrimstoneSlag", 10)
-						.AddIngredient(calamity, "CalamityDust", 10)
 						.AddIngredient(ItemID.MusicBox, 1)
 						.AddTile(musicBoxCraftingStation)
 						.Register();
@@ -1037,8 +1010,22 @@ namespace UnCalamityModMusic.Content
 					UnCalamityModMusic.Instance.Logger.Debug(Language.GetTextValue("Mods.UnCalamityModMusic.Recipes.NameMismatchError"));
 				}
 
-				//Profaned Guardians
-				try
+                //Primordial Wyrm
+                try
+                {
+                    Recipe.Create(cmusic.Find<ModItem>("PrimordialWyrmMusicBox").Type, 1)
+                        .AddIngredient(calamity, "HalibutCannon", 1)
+                        .AddIngredient(ItemID.MusicBox, 1)
+                        .AddTile(musicBoxCraftingStation)
+                        .Register();
+                }
+                catch
+                {
+                    UnCalamityModMusic.Instance.Logger.Debug(Language.GetTextValue("Mods.UnCalamityModMusic.Recipes.NameMismatchError"));
+                }
+
+                //Profaned Guardians
+                try
 				{
 					Recipe.Create(cmusic.Find<ModItem>("ProfanedGuardiansMusicBox").Type, 1)
 						.AddIngredient(calamity, "ProfanedGuardianTrophy", 1)
@@ -1169,20 +1156,6 @@ namespace UnCalamityModMusic.Content
 					UnCalamityModMusic.Instance.Logger.Debug(Language.GetTextValue("Mods.UnCalamityModMusic.Recipes.NameMismatchError"));
 				}
 
-				//Yharon Legacy
-				try
-				{
-					Recipe.Create(cmusic.Find<ModItem>("YharonLegacyMusicBox").Type, 1)
-						.AddIngredient(calamity, "ForgottenDragonEgg", 1)
-						.AddIngredient(ItemID.MusicBox, 1)
-						.AddTile(musicBoxCraftingStation)
-						.Register();
-				}
-				catch
-				{
-					UnCalamityModMusic.Instance.Logger.Debug(Language.GetTextValue("Mods.UnCalamityModMusic.Recipes.NameMismatchError"));
-				}
-
 				//Yharon Phase 1
 				try
 				{
@@ -1214,26 +1187,7 @@ namespace UnCalamityModMusic.Content
 			#endregion
 
 			#region Calamity Addon Music Boxes
-			/*if (otherCalamityModMusic)
-			{
-				//Planetoids
-				try
-				{
-					Recipe.Create(othermusic.Find<ModItem>("PlanetoidsMusicBox").Type, 1)
-						.AddIngredient(ItemID.Cloud, 10)
-						.AddIngredient(ItemID.DirtBlock, 10)
-						.AddIngredient(calamity, "Cinderplate", 10)
-						.AddIngredient(ItemID.MusicBox, 1)
-						.AddTile(musicBoxCraftingStation)
-						.Register();
-				}
-				catch
-				{
-					UnCalamityModMusic.Instance.Logger.Debug(Language.GetTextValue("Mods.UnCalamityModMusic.Recipes.NameMismatchError"));
-				}
-			}*/
-
-			if (calamityVanities)
+            if (calamityVanities)
 			{
 				//Astral Blight
 				try
@@ -1281,24 +1235,8 @@ namespace UnCalamityModMusic.Content
 				{
 					UnCalamityModMusic.Instance.Logger.Debug(Language.GetTextValue("Mods.UnCalamityModMusic.Recipes.NameMismatchError"));
 				}
-
-				//Astrageldon Title
-				try
-				{
-					Recipe.Create(catalyst.Find<ModItem>("AstrageldonTitleMusicBox").Type, 1)
-						.AddIngredient(calamity, "AstralOre", 10)
-						.AddIngredient(catalyst, "AstraJelly", 10)
-						.AddIngredient(catalyst, "MetanovaBar", 3)
-						.AddIngredient(ItemID.MusicBox, 1)
-						.AddTile(musicBoxCraftingStation)
-						.Register();
-				}
-				catch
-				{
-					UnCalamityModMusic.Instance.Logger.Debug(Language.GetTextValue("Mods.UnCalamityModMusic.Recipes.NameMismatchError"));
-				}
 			}
 			#endregion
-		}
-	}
+        }
+    }
 }

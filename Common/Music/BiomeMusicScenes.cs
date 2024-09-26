@@ -252,7 +252,7 @@ namespace UnCalamityModMusic.Common.Music
 
 		public override bool IsSceneEffectActive(Player player)
 		{
-			return PlayerFlags.ZoneDeepAbyss && !(PlayerFlags.TownSceneActive || PlayerFlags.WorkshopSceneActive) && ModContent.GetInstance<MusicConfig>().DeepAbyssAltTheme;
+			return PlayerFlags.ZoneDeepAbyss && !(PlayerFlags.TownSceneActive || PlayerFlags.WorkshopSceneActive) && ModContent.GetInstance<MusicConfig>().AbyssLayer3Alt;
 		}
 	}
 	public class GlowingMushroomFields : ModSceneEffect

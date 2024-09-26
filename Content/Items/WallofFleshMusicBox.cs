@@ -9,7 +9,9 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.WallofFleshMusicBox>();
 
-		public override void AddRecipes()
+        public override string MusicFilePath => "WallofFlesh";
+
+        public override void MusicBoxRecipe()
 		{
 			Recipe.Create(Type, 1)
 				.AddIngredient(ItemID.WallofFleshTrophy, 1)

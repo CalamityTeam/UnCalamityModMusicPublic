@@ -12,7 +12,9 @@ namespace UnCalamityModMusic
 	{
 		public static UnCalamityModMusic Instance;
 
-		internal static bool calamityMod;
+        public const string CalamityWikiURL = "https://calamitymod.wiki.gg/wiki/{}";
+
+        internal static bool calamityMod;
 		internal static bool calamityModMusic;
 		internal static bool catalystMod;
 		internal static bool calamityVanities;
@@ -22,10 +24,10 @@ namespace UnCalamityModMusic
 		internal static bool magicStorage;
 		internal static bool wikiThis;
 
-		public override void Load()
-        {
-			Instance = this;
+        public UnCalamityModMusic() => Instance = this;
 
+        public override void Load()
+		{
 			MusicPathing.InitalizeMusicPaths(Instance);
 
 			calamityMod = ModLoader.TryGetMod("CalamityMod", out Mod calamity);
@@ -57,7 +59,8 @@ namespace UnCalamityModMusic
 
 			if (wikiThis)
 			{
-                wiki.Call("AddModURL", this, "https://terrariamods.wiki.gg/wiki/Vanilla_Calamity_Mod_Music/{}");
+				wiki.Call("AddModURL", this, CalamityWikiURL);
+                wiki.Call("AddWikiTexture", this, ModContent.Request<Texture2D>("UnCalamityModMusic/WikiThisIcon"));
             }
 		}
 	}

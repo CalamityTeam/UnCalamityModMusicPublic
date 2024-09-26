@@ -37,7 +37,7 @@ namespace UnCalamityModMusic.Common.Music
 
 		public override int Music => MusicPathing.GetAmbienceSlot(Path);
 
-		public override SceneEffectPriority Priority => (Main.LocalPlayer.townNPCs > 2f || ModContent.GetInstance<LanternFestival>().IsSceneEffectActive(Main.LocalPlayer)) ? SceneEffectPriority.Environment : ScenePriority;
+		public override SceneEffectPriority Priority => (Main.LocalPlayer.townNPCs > 2f || ModContent.GetInstance<LanternFestival>().IsSceneEffectActive(Main.LocalPlayer)) ? SceneEffectPriority.Environment + 1 : ScenePriority;
 
 		public override float GetWeight(Player player)
 		{

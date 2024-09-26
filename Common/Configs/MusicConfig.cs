@@ -8,15 +8,19 @@ namespace UnCalamityModMusic.Common.Configs
 	{
 		public override ConfigScope Mode => ConfigScope.ClientSide;
 
-		[Header("$Mods.UnCalamityModMusic.Configs.MusicConfig.MusicChangesHeader")]
+		[Header("$Mods.UnCalamityModMusic.Configs.MusicConfig.MusicTogglesHeader")]
 
-		[BackgroundColor(192, 54, 64, 192)]
-		[DefaultValue(true)]
-		public bool WorkshopThemes { get; set; }
+        [BackgroundColor(192, 54, 64, 192)]
+        [DefaultValue(true)]
+        public bool WorkshopThemes { get; set; }
 
-		[BackgroundColor(192, 54, 64, 192)]
+        [BackgroundColor(192, 54, 64, 192)]
+        [DefaultValue(true)]
+        public bool HardmodeInterlude { get; set; }
+
+        [BackgroundColor(192, 54, 64, 192)]
 		[DefaultValue(false)]
-		public bool DeepAbyssAltTheme { get; set; }
+		public bool AbyssLayer3Alt { get; set; }
 
 		[Header("$Mods.UnCalamityModMusic.Configs.MusicConfig.ConditionChangesHeader")]
 
@@ -26,6 +30,6 @@ namespace UnCalamityModMusic.Common.Configs
 
 		[BackgroundColor(192, 54, 64, 192)]
 		[DefaultValue(false)]
-		public bool OverrideAnahitasLureTheme { get; set; }
+		public bool OverrideAnahitasLure { get; set; }
 	}
 }

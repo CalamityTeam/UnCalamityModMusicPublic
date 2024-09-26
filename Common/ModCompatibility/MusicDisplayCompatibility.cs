@@ -38,6 +38,7 @@ namespace UnCalamityModMusic.Common.ModCompatibility
             AddMusic("WorkshopTier2", "HeartPlusUp", "Biomes");
             AddMusic("WorkshopTier1", "HeartPlusUp", "Biomes");
             AddMusic("TownNight", "HeartPlusUp", "Biomes");
+            AddMusic("TownNight_Noiseless", "HeartPlusUp", "Biomes");
             AddMusic("TownDay", "HeartPlusUp", "Biomes");
             //AddMusic("JungleTemple", "Universe", "Biomes");
             AddMusic("Dungeon", "HeartPlusUp", "Biomes");
@@ -87,7 +88,8 @@ namespace UnCalamityModMusic.Common.ModCompatibility
             AddMusic("KingSlime", "HeartPlusUp", "Bosses");
             //AddMusic("FrostMoon", "HeartPlusUp", "Events");
             //AddMusic("PumpkinMoon", "HeartPlusUp", "Events");
-            //AddMusic("TorchGod", "HeartPlusUp", "Events");
+            AddMusic("TorchGod", "HeartPlusUp", "Events");
+            AddMusic("TorchGodRevengeance", "HeartPlusUp", "Events");
             //AddMusic("LunarTowersSolar", "HeartPlusUp", "Events");
             //AddMusic("LunarTowersNebula", "HeartPlusUp", "Events");
             //AddMusic("LunarTowersVortex", "HeartPlusUp", "Events");
@@ -97,13 +99,16 @@ namespace UnCalamityModMusic.Common.ModCompatibility
             //AddMusic("FrostLegion", "HeartPlusUp", "Events");
             //AddMusic("GoblinArmy", "HeartPlusUp", "Events");
             //AddMusic("SolarEclipse", "HeartPlusUp", "Events");
-            AddMusic("BloodMoonDeath", "Thriplerex", "Events");
             AddMusic("BloodMoon", "Thriplerex", "Events");
+            AddMusic("BloodMoonDeath", "Thriplerex", "Events");
             AddMusic("SlimeRain", "HeartPlusUp", "Events");
             //AddMusic("Blizzard", "Universe", "Events");
             //AddMusic("Sandstorm", "Universe", "Events");
+            AddMusic("OceanRain", "HeartPlusUp", "Events");
             //AddMusic("Thunderstorm", "Universe", "Events");
+            AddMusic("TownRain", "HeartPlusUp", "Events");
             AddMusic("Rain", "HeartPlusUp", "Events");
+            AddMusic("TownParty", "HeartPlusUp", "Events");
             //AddMusic("WindyDay", "HeartPlusUp", "Events");
             AddMusic("LanternFestival", "HeartPlusUp", "Events");
             AddMusic("HardmodeInterlude", "Salvati", "Misc");

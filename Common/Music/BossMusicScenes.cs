@@ -1,13 +1,34 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using System;
 using Terraria;
+using Terraria.GameContent.Events;
 using Terraria.ID;
 using Terraria.ModLoader;
-using UnCalamityModMusic.Common.Configs;
 using UnCalamityModMusic.Common.ModCompatibility;
 
 namespace UnCalamityModMusic.Common.Music
 {
-	public class MoonLord : ModSceneEffect
+    public class FalseEpilogue : ModSystem
+    {
+        public int FalseEpilogueMusicSlot = 0;
+
+        public override void OnWorldLoad()
+        {
+            FalseEpilogueMusicSlot = MusicPathing.GetMusicSlot("FalseEpilogue");
+        }
+
+        public override void UpdateUI(GameTime gameTime)
+        {
+            Player player = Main.player[Main.myPlayer];
+
+            if (CreditsRollEvent.IsEventOngoing && !player.hasCreditsSceneMusicBox && PlayerFlags.CalamityMusicEventInactive)
+            {
+                Main.musicBox2 = FalseEpilogueMusicSlot;
+                return;
+            }
+        }
+    }
+    public class MoonLord : ModSceneEffect
 	{
 		public override int Music => InfernumCompatibility.DecideOnMusicPath("MoonLord", "MoonLord");
 
@@ -26,7 +47,7 @@ namespace UnCalamityModMusic.Common.Music
 
 		public override bool IsSceneEffectActive(Player player)
 		{
-			return WorldFlags.CustomImpendingDoom > 0 || NPC.MoonLordCountdown > 0;
+			return ImpendingDoomSystem.ImpendingDoomCountdown > 0 || NPC.MoonLordCountdown > 0;
 		}
 
 		public override void SpecialVisuals(Player player, bool isActive)
@@ -197,7 +218,7 @@ namespace UnCalamityModMusic.Common.Music
 
 		public override bool IsSceneEffectActive(Player player)
 		{
-			return WorldFlags.ImminentDestruction > 0;
+			return ImminentDestructionSystem.ImminentDestructionCountdown > 0;
 		}*/
 	}
 	public class QueenSlime : ModSceneEffect

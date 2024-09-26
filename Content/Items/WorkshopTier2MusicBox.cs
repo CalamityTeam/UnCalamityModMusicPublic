@@ -11,7 +11,9 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.WorkshopTier2MusicBox>();
 
-		public override void AddRecipes()
+        public override string MusicFilePath => "WorkshopTier2";
+
+        public override void MusicBoxRecipe()
 		{
 			var calamityMod = ModLoader.TryGetMod("CalamityMod", out Mod calamity);
 			

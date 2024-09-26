@@ -3,40 +3,45 @@ Mods: {
 		Configs: {
 			MusicConfig: {
 				DisplayName: Music Config
-				MusicChangesHeader: Music Changes
+				MusicTogglesHeader: Music Toggles
 				ConditionChangesHeader: Condition Changes
 
 				WorkshopThemes: {
-					Label: Workshop Themes
+					Label: "[i:UnCalamityModMusic/WorkshopTier1MusicBox] Workshop Themes"
 					Tooltip:
 						'''
-						Enables the Workshop themes that play when near certain crafting stations.
-						If you're looking to disable the Town themes, use the separate No Town Music mod.
+						Toggles the Workshop themes that play when near certain crafting stations.
+						If you're looking to disable the Town themes, use the separate No Town Music mod or use Shadow Candles.
 						'''
 				}
 
-				DeepAbyssAltTheme: {
-					Label: Deep Abyss Alt Theme
-					Tooltip: Enables an alternate theme for the 3rd layer of the Abyss.
+				HardmodeInterlude: {
+					Label: "[i:UnCalamityModMusic/HardmodeInterludeMusicBox] Hardmode Interlude"
+					Tooltip:
+						'''
+						Toggles a music event that plays when entering Hardmode.
+						If you're looking to disable the Credits, use the separate No In-game Credits mod.
+						'''
+				}
+
+				AbyssLayer3Alt: {
+					Label: "[i:UnCalamityModMusic/AbyssLayer3AltMusicBox] Abyss Layer 3 Alt"
+					Tooltip: Toggles an alternate theme for the 3rd layer of the Abyss.
 				}
 
 				PrioritizeInfernumMusic: {
-					Label: Prioritize Infernum Mod Music
+					Label: "[i:WallOfFleshGoatMountItem] Prioritize Infernum Music"
 					Tooltip:
 						'''
-						Enables Infernum music to take priority over VCMM music.
+						Toggles whether Infernum music will take priority over VCMM music.
 						This option does nothing if the Infernum Mode Music mod is disabled.
-						This option does not affect Calamity bosses or any alternate themes.
+						This option does not affect Calamity bosses.
 						'''
 				}
 
-				OverrideAnahitasLureTheme: {
-					Label: Ocean Themes Override Anahita's Lure Theme
-					Tooltip:
-						'''
-						Overrides the ??? theme with the Ocean themes.
-						This also applies to Ocean ambience.
-						'''
+				OverrideAnahitasLure: {
+					Label: "[i:UnCalamityModMusic/OceanDayMusicBox] Override Anahita's Lure"
+					Tooltip: Toggles whether the Anahita's Lure theme will override the Ocean themes.
 				}
 			}
 
@@ -46,7 +51,7 @@ Mods: {
 				OtherChangesHeader: Other Changes
 
 				AmbienceFrequency: {
-					Label: Ambience Frequency
+					Label: "[i:Bunny] Ambience Frequency"
 					Tooltip:
 						'''
 						Adjusts the frequency at which ambience will replace normal music, from 0% to 100%.
@@ -55,18 +60,23 @@ Mods: {
 				}
 
 				DisableBeeHiveAmbience: {
-					Label: Disable Bee Hive Ambience
-					Tooltip: Disables ambience in Bee Hives if ambience is enabled.
+					Label: "[i:BeeWax] Disable Bee Hive Ambience"
+					Tooltip: Toggles ambience in Bee Hives if ambience is enabled.
 				}
 
 				DisableSpiderCaveAmbience: {
-					Label: Disable Spider Cave Ambience
-					Tooltip: Disables ambience in Spider Caves if ambience is enabled.
+					Label: "[i:SpiderFang] Disable Spider Cave Ambience"
+					Tooltip: Toggles ambience in Spider Caves if ambience is enabled.
+				}
+
+				MusicBoxRecipes: {
+					Label: "[i:HeavyWorkBench] Music Box Recipes"
+					Tooltip: Toggles all music boxes recipes that require a Heavy Work Bench.
 				}
 
 				MusicBoxResprite: {
-					Label: Empty Music Box Resprite
-					Tooltip: Enables a resprite of the empty, unrecorded music box.
+					Label: "[i:MusicBox] Empty Music Box Resprite"
+					Tooltip: Toggles a resprite of the empty, unrecorded music box.
 				}
 			}
 		}
@@ -114,7 +124,7 @@ Mods: {
 
 			CrimsonUndergroundMusicBox: {
 				DisplayName: Music Box (Underground Crimson)
-				Tooltip: Plays 'Bloodstained Terror' by SkippyZii
+				Tooltip: Plays 'Inside the Beast' by SkippyZii
 			}
 
 			DesertMusicBox: {
@@ -216,6 +226,11 @@ Mods: {
 				Tooltip: Plays 'serene tides' by Heart Plus Up!
 			}
 
+			OceanRainMusicBox: {
+				DisplayName: Music Box (Ocean Rain)
+				Tooltip: Plays 'waves' by Heart Plus Up!
+			}
+
 			RainLegacyMusicBox: {
 				DisplayName: Music Box (Rain - Legacy)
 				Tooltip: Plays 'Grey Sky' by Heart Plus Up!
@@ -241,6 +256,16 @@ Mods: {
 				Tooltip: Plays 'Starry Ascent' by Heart Plus Up!
 			}
 
+			TorchGodMusicBox: {
+				DisplayName: Music Box (Torch God)
+				Tooltip: Plays 'Trial by Fire' by Heart Plus Up!
+			}
+
+			TorchGodRevengeanceMusicBox: {
+				DisplayName: Music Box (Torch God - Revengeance)
+				Tooltip: Plays a variant of 'Trial by Fire' by Heart Plus Up!
+			}
+
 			TownDayMusicBox: {
 				DisplayName: Music Box (Town Day)
 				Tooltip: Plays 'Haven in the Sunlight' by Heart Plus Up!
@@ -249,6 +274,16 @@ Mods: {
 			TownNightMusicBox: {
 				DisplayName: Music Box (Town Night)
 				Tooltip: Plays 'Moonlit Haven' by Heart Plus Up!
+			}
+
+			TownPartyMusicBox: {
+				DisplayName: Music Box (Town Party)
+				Tooltip: Plays 'Celebration Haven' by Heart Plus Up!
+			}
+
+			TownRainMusicBox: {
+				DisplayName: Music Box (Town Rain)
+				Tooltip: Plays 'Haven in Overcast' by Heart Plus Up!
 			}
 
 			TundraMusicBox: {
@@ -326,13 +361,14 @@ Mods: {
 					WorkshopTier2: The Sky and the Depths
 					WorkshopTier1: Metal, Wood, and Fire
 					TownNight: Moonlit Haven
+					TownNight_Noiseless: Moonlit Haven
 					TownDay: Haven in the Sunlight
 					Dungeon: Chambers of the Tyrant
 					GlowingMushroomFields: Psychedelic Depths
 					Corruption: Writhing Shadows
 					CorruptionUnderground: Between the Shadows
 					Crimson: Clotted Lands
-					CrimsonUnderground: Bloodstained Terror
+					CrimsonUnderground: Inside the Beast
 					Geodes: Amidst the Minerals
 					Tundra: Frozen Over
 					TundraUnderground: Inside the Glaciers
@@ -353,10 +389,15 @@ Mods: {
 					EaterofWorlds: Menace of the Chasms
 					EyeofCthulhu: Bloodshot Barrage
 					KingSlime: Gelatinous Monarch
-					BloodMoonDeath: Sanguine Eclipse
+					TorchGod: Trial by Fire
+					TorchGodRevengeance: Trial by Fire
 					BloodMoon: Congealing Shadows
+					BloodMoonDeath: Sanguine Eclipse
 					SlimeRain: Gelatin Showers
+					OceanRain: waves
+					TownRain: Haven in Overcast
 					Rain: downpour
+					TownParty: Celebration Haven
 					LanternFestival: Serenity
 					HardmodeInterlude: The Resurrection of a Cruel World
 					FalseEpilogue: The Memory of a Cruel World
@@ -377,10 +418,9 @@ Mods: {
 			}
 		}
 
-		Loot.FirstKillCondition: Drops only on the first kill
-
 		Recipes: {
 			EvilPowder: Evil Powder
+			SillyTiedBalloon: Silly Tied Balloon
 			NameMismatchError: There is an internal name mismatch between the items in this recipe and the items in another mod. The recipe for this item has been disabled.
 		}
 	}

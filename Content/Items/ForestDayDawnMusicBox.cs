@@ -10,7 +10,9 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.ForestDayDawnMusicBox>();
 
-		public override void AddRecipes()
+        public override string MusicFilePath => "ForestDayDawn";
+
+        public override void MusicBoxRecipe()
 		{
 			Recipe.Create(Type, 1)
 				.AddIngredient(ItemID.Wood, 10)

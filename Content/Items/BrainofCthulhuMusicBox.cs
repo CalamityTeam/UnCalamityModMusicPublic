@@ -9,7 +9,9 @@ namespace UnCalamityModMusic.Content.Items
 	{
 		public override int MusicBoxTile => ModContent.TileType<Tiles.BrainofCthulhuMusicBox>();
 
-		public override void AddRecipes()
+        public override string MusicFilePath => "BrainofCthulhu";
+
+        public override void MusicBoxRecipe()
 		{
 			Recipe.Create(Type, 1)
 				.AddIngredient(ItemID.BrainofCthulhuTrophy, 1)
